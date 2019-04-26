@@ -1,0 +1,1820 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "beraserif" "FrankRuehl"
+\font_sans "default" "default"
+\font_typewriter "default" "Miriam"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+אלגברה מודרנית - הרצאה
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Author
+כותב: איתי וויסמן, מרצה: רון אהרוני
+\end_layout
+
+\begin_layout Standard
+נתעסק בחבורות ובמספרים טבעיים שמסומנים:
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\text{\ensuremath{\mathbb{N}=}\{0,1,2,3...\}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובמספרים השלמים שמסומנים: 
+\begin_inset Formula $\mathbb{Z=}\{...,-3,-2,-1,0,1,2,3,...\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש חומרים ב
+\lang english
+moodle
+\lang hebrew
+, ומומלץ הספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Herstein
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section
+חלוקה עם שארית
+\end_layout
+
+\begin_layout Standard
+למשל: 
+\begin_inset Formula $35:8=7(3)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+לכל שני מספרים טבעיים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $a,b$
+\end_inset
+
+ יש מספרים
+\lang english
+ 
+\lang hebrew
+
+\begin_inset Formula $0\le r\le b$
+\end_inset
+
+ כך שמתקיים: 
+\begin_inset Formula $a=kb+r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+יהא 
+\begin_inset Formula $k$
+\end_inset
+
+ המספר הגדול ביורת כך ש-
+\begin_inset Formula $kb\le a$
+\end_inset
+
+.
+ טענה: מתקיים 
+\begin_inset Formula $a-kb<b$
+\end_inset
+
+.
+ הוכחה: אם לא, אזי 
+\begin_inset Formula $a-kb\ge b$
+\end_inset
+
+ ואז 
+\begin_inset Formula $a\ge kb+b=(k+1)b$
+\end_inset
+
+ בסתירה לכך ש 
+\begin_inset Formula $k$
+\end_inset
+
+ הוא מקסימלי כך ש- 
+\begin_inset Formula $a\ge kb$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim*
+\begin_inset Formula $a_{1}\equiv a_{2}mod(b)\iff b|(a_{1}-a_{2})$
+\end_inset
+
+ כלומר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $a_{1}-a_{2}$
+\end_inset
+
+ מחלק את 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+כיוון אחד, כיוון שני קל להוכיח בבית.
+ אם 
+\begin_inset Formula $a_{1}\equiv a_{2}mod(b)$
+\end_inset
+
+ אזי מתקיים: 
+\begin_inset Formula $a_{1}-a_{2}=(k_{1}-k_{2})b=kb$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+סגירות לחיבור וחיסור
+\end_layout
+
+\begin_layout Definition*
+נאמר כי תת קבוצה 
+\begin_inset Formula $S\subseteq\mathbb{Z}$
+\end_inset
+
+ סגורה לחיבור אם לכל 
+\begin_inset Formula $s,t\in S$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $s+t\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לדוגמה הקבוצה 
+\begin_inset Formula $\mathbb{N},-\mathbb{N}$
+\end_inset
+
+, קבוצת הזוגיים ב
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+, כל המספרים ב
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ הגדולים ממס' מסויים 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+\begin_inset Formula $S\subseteq\mathbb{Z}$
+\end_inset
+
+ תקרא סגורה לחיסור אם לכל 
+\begin_inset Formula $s,t\in S$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $s-t\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מסתבר שסגירות לחיסור זה רק עבור קבוצות מסוג 
+\begin_inset Formula $k\cdot\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמאות לקבוצות המקיימות סגירות לחיבור וגם סגירות לחיסור: 
+\begin_inset Formula $k\cdot Z$
+\end_inset
+
+ הכפולות של מס' מסויים 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem*
+אם 
+\begin_inset Formula $S\subseteq\mathbb{Z}$
+\end_inset
+
+ סגורה גם לחיבור וגם לחיסור אזי קיים 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $S=k\cdot\mathbb{Z}$
+\end_inset
+
+, אפשר גם לקחת 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim*
+לקבוצה שסגורה לחיבור ולחיסור נלמד בהמשך שנקראת חבורה.
+\end_layout
+
+\begin_layout Proof
+תהי קבוצה 
+\begin_inset Formula $S\subseteq Z$
+\end_inset
+
+ סגורה לחיבור ולחיסור.
+ צריך להוכיח כי קיים 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $S=k\cdot\mathbb{N}$
+\end_inset
+
+.
+ נשים לב שאם נמצא 
+\begin_inset Formula $k$
+\end_inset
+
+ כזה אז הוא יהיה איבר ב-
+\begin_inset Formula $S$
+\end_inset
+
+.
+ זאת משום שמתקיים: 
+\begin_inset Formula $S=\{k\cdot a|a\in\mathbb{Z}\}$
+\end_inset
+
+ ולכן עבור 
+\begin_inset Formula $a=1$
+\end_inset
+
+ יתקיים 
+\begin_inset Formula $k\in S$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מניחוש של תלמיד, 
+\begin_inset Formula $k$
+\end_inset
+
+ הזה יהיה המספר הטבעי הכי קטן ב-
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim*
+יהא 
+\begin_inset Formula $k$
+\end_inset
+
+ המס' הטבעי הכי קטן ב-ּּ
+\begin_inset Formula $S$
+\end_inset
+
+.
+ 
+\begin_inset Formula $S=k\cdot Z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+פר נראה כי 
+\begin_inset Formula $k\cdot\mathbb{Z}\subseteq S$
+\end_inset
+
+ ולאחר מכן נראה 
+\begin_inset Formula $k\cdot\mathbb{Z}\supseteq S$
+\end_inset
+
+, כלומר נראה הכלה דו כיוונית.
+\bar under
+
+\begin_inset Newline newline
+\end_inset
+
+כיוון אחד:
+\bar default
+ מתקיים מסגירות לחיבור 
+\begin_inset Formula $2k=k+k\in S$
+\end_inset
+
+ וכן 
+\begin_inset Formula $3k=k+k+k\in S$
+\end_inset
+
+ ולכן גם עבור 
+\begin_inset Formula $m\cdot k=k+k+k+\cdots+k\in S$
+\end_inset
+
+.
+ זה עבור המספרים החיוביים.
+ עבור המספרים השליליים ניתן להראות אותו דבר מסגירות לחיסור כי לכל 
+\begin_inset Formula $m<0$
+\end_inset
+
+, מכיוון ש 
+\begin_inset Formula $0\in S$
+\end_inset
+
+ אזי 
+\begin_inset Formula $-k=0-k\in S$
+\end_inset
+
+ ולכן לכל 
+\begin_inset Formula $m<0$
+\end_inset
+
+ כזה 
+\begin_inset Formula $m\cdot-k\in S$
+\end_inset
+
+.
+ זה מראה את הכיוון הראשון.
+\bar under
+
+\begin_inset Newline newline
+\end_inset
+
+כיוון שני:
+\bar default
+ עבור 
+\begin_inset Formula $S$
+\end_inset
+
+, יהא 
+\begin_inset Formula $s\in S$
+\end_inset
+
+ נניח כי 
+\begin_inset Formula $s>0$
+\end_inset
+
+ נרצה להראות כי עבור 
+\begin_inset Formula $m$
+\end_inset
+
+ מסויים מתקיים 
+\begin_inset Formula $s=mk$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+עבור 
+\begin_inset Formula $s=0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $m=0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $s=mk=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+עבור 
+\begin_inset Formula $s>0$
+\end_inset
+
+ נשתמש במשפט החלוקה ולכן קיימים 
+\begin_inset Formula $0\le r\le k$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $s=mk+r$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $r=s-mk$
+\end_inset
+
+ ומסגירות לחיסור 
+\begin_inset Formula $r\in S$
+\end_inset
+
+ ומכיוון ש
+\begin_inset Formula $r\le k$
+\end_inset
+
+ אם 
+\begin_inset Formula $r\ne0$
+\end_inset
+
+ נקבל כי הוא קטן יותר מ
+\begin_inset Formula $k$
+\end_inset
+
+ ובתוך 
+\begin_inset Formula $S$
+\end_inset
+
+ וזאת בסתירה למינימליות 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ לכן בהכרח 
+\begin_inset Formula $r=0$
+\end_inset
+
+ ומתקיים כי 
+\begin_inset Formula $s=mk$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+עבור 
+\begin_inset Formula $s<0$
+\end_inset
+
+ אזי מתקיים: 
+\begin_inset Formula $-s=0-s\in\mathbb{Z}$
+\end_inset
+
+.
+ נשתמש בשיטת ה
+\begin_inset Quotes erd
+\end_inset
+
+קומקום
+\begin_inset Quotes erd
+\end_inset
+
+, כלומר נשתמש במה שכבר הוכחנו, עבור המספרים החיוביים.
+ לכן קיים 
+\begin_inset Formula $m$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $-s=mk$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $s=(-m)k$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $s\in k\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ולכן לכל 
+\begin_inset Formula $s\in S$
+\end_inset
+
+ הטענה מתקיימית ולכן 
+\begin_inset Formula $s\subseteq k\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה: צריך להוכיח את נכונות המשפט גם עבור המקרה המיוחד בו 
+\begin_inset Formula $S=\{0\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+כלל ההתחלקות ב-
+\numeric on
+3
+\end_layout
+
+\begin_layout Standard
+מספר מתחלק ב-
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם סכום ספרותיו מתחלק ב-
+\numeric on
+3
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+לדוגמה: המספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7521
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משום שמתקיים 
+\begin_inset Formula $7+5+2+1=15$
+\end_inset
+
+ וכן 
+\begin_inset Formula $15$
+\end_inset
+
+ מתחלק ב-
+\numeric on
+3
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח משפט זה על ידי הוכחה של משפט כללי יותר עבור שארית כללית:
+\end_layout
+
+\begin_layout Theorem*
+אם סכום הספרות במספר 
+\begin_inset Formula $n$
+\end_inset
+
+ הוא 
+\begin_inset Formula $m$
+\end_inset
+
+ אזי 
+\begin_inset Formula $m\equiv n(mod3)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+למשל עבור המספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7528
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתקיים כי 
+\begin_inset Formula $7528\equiv1mod(3)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשאל את השאלה הבאה: מהי הספרה האחרונה במס'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $2019+1756$
+\end_inset
+
+.
+ לא צריך לחשב את כל החיבור על מנת להיווכח כי הספרה הזו היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+.
+ לכן על מנת להבין את השאריות של המחוברים.
+ כלומר: מתקיים 
+\begin_inset Formula $2019=9(mod10)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $1756=6(mod10)$
+\end_inset
+
+ ולכן מתקיים 
+\begin_inset Formula $2019+1756=9+6(mod(10))=5(mod(10))$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשאל שאלה נוספת: מהי הספרה האחרונה במס' 
+\begin_inset Formula $2019\times1756$
+\end_inset
+
+.
+ באופן דומה קל להיווכח כי הספרה האחרונה היא 
+\begin_inset Formula $4$
+\end_inset
+
+, שכן מתקיים 
+\begin_inset Formula $6\cdot9=54$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim*
+באופן כללי אם 
+\begin_inset Formula $m=a(modk)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $n=p(modk)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $m+n=a+b(modk)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נתון 
+\begin_inset Formula $k|m-a$
+\end_inset
+
+ וכן 
+\begin_inset Formula $k|n-b$
+\end_inset
+
+ כלומר קיימים 
+\begin_inset Formula $s,t$
+\end_inset
+
+ כך ש
+\begin_inset Formula $m-a=tk$
+\end_inset
+
+ וכן 
+\begin_inset Formula $n-b=sk$
+\end_inset
+
+ ולכן מתקיים 
+\begin_inset Formula $m+n-(a+b)=(s+t)k$
+\end_inset
+
+ ולכן מתקיים 
+\begin_inset Formula $k|(m+n)-(a+b)$
+\end_inset
+
+ ולפי המשפט לעיל יש להם אותה שארית ולכן 
+\begin_inset Formula $m+n=a+b(modk)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מה הרלוונטיות של זה לחלוקה ב-
+\numeric on
+3
+\numeric off
+? הסוד של כלל חלוקה ב-
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא שאנו עובדים בשיטה העשרונית, ומתקיים 
+\begin_inset Formula $10=1(mod3)$
+\end_inset
+
+ ולכן עבור 
+\begin_inset Formula $100=10\cdot10$
+\end_inset
+
+ מתקיים ממה שהוכחנו 
+\begin_inset Formula $100=1\cdot1(mod3)=1mod(3)$
+\end_inset
+
+.
+ כך עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1000
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+10000
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכ'ו.
+ אם נחזור לדוגמה שלנו קודם: 
+\begin_inset Formula $7528=7\cdot1000+5\cdot100+2\cdot10+8\cdot1=7\cdot1+5\cdot1+2\cdot1+8\cdot1(mod3)=22mod(3)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+די התעלמנו מכך שלמשל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא בעצם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שווה ל
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+במודולו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי נוח להסתכל בצורה זו למשפט שלנו.
+\end_layout
+
+\begin_layout Standard
+מעניין להוכיח את כלל ההתחלקות ב
+\numeric on
+11
+\numeric off
+.
+ לדוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1331
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתחלק ב
+\numeric on
+11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי מתקיים שהמס' 
+\begin_inset Formula $1-3+3-1=0$
+\end_inset
+
+ מתחלק ב
+\numeric on
+11
+\numeric off
+.
+ זה מקיים כי 
+\begin_inset Formula $10=-1mod(11)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $100=-1\cdot-1mod(11)=1mod(11)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מספרים ראשוניים
+\end_layout
+
+\begin_layout Definition*
+נאמר כי מס' 
+\begin_inset Formula $p\in\mathbb{N}$
+\end_inset
+
+ ראשוני אם אין לו מחלקים ב-
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ פרט ל-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולעצמו.
+ בנוסף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אינו ראשוני.
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $1,2,3,5,7,...,1003$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפני מס' שנים הייתה פריצת דרך ומצאו אלגוריתם בסיבוכיות פולינומיאלי לבדיקה
+ האם מס' 
+\begin_inset Formula $n$
+\end_inset
+
+ הוא ראשוני.
+ עבור הבדיקה הטריוויאלית של חלוקה בכל מס' ראשוני עד 
+\begin_inset Formula $\sqrt{n}$
+\end_inset
+
+, מסתבר כי הסיבוכיות היא אקספוננציאלית בקלט, שכן הוא תלויה בגודל 
+\begin_inset Formula $n$
+\end_inset
+
+, ולכן מציאת האלגוריתם בסיבוכיות פולינומיאלית היא פריצת דרך חשובה.
+ על השאלה האם בהינתן המידע שהמס' אינו ראשוני נרצה למצוא את הפירוק שלו לגורמים
+ עוד לא ענו, וזה מאוד חשוב לקריפטוגרפיה שכן מרבית שיטות ההצפנה כיום מתבססים
+ על כך שקשה לפרק מספרים מאוד גדולים.
+\end_layout
+
+\begin_layout Theorem*
+המשפט היסודי של המספרים הטבעיים.
+ 
+\begin_inset Newline newline
+\end_inset
+
+לכל מספר 
+\begin_inset Formula $n$
+\end_inset
+
+ יש פירוק 
+\series bold
+יחיד
+\series default
+ למספרים ראשוניים: 
+\begin_inset Formula $n=p_{1}\cdot p_{2}\cdots p_{k}$
+\end_inset
+
+.
+ למשל עבור 
+\begin_inset Formula $120=2\cdot2\cdot2\cdot3\cdot5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+משפטו של אוקלידס.
+ 
+\begin_inset Newline newline
+\end_inset
+
+יש אינסוף מספרים ראשוניים.
+\end_layout
+
+\begin_layout Proof
+למשפט אוקלידס.
+ נניח בשלילה שיש רק מס' סופי של מספרים ראשוניים.
+ נקרא להם 
+\begin_inset Formula $p_{1,}p_{2},\cdots p_{k}$
+\end_inset
+
+ נסתכל על 
+\begin_inset Formula $n=p_{1}\cdot p_{2}\cdots p_{k}+1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ אינו מתחלק ב
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ שכן 
+\begin_inset Formula $n=1(mod(p_{1}))$
+\end_inset
+
+.
+ ולכן 
+\begin_inset Formula $n$
+\end_inset
+
+ אינו מתחלק ב
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ וכך לכל 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+.
+ ולכן לפי המשפט היסודי, יש מס' ראשוני 
+\begin_inset Formula $q$
+\end_inset
+
+ שמחלק את 
+\begin_inset Formula $n$
+\end_inset
+
+, אך 
+\begin_inset Formula $q$
+\end_inset
+
+ שונה מכל 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ וזאת בסתירה להנחה שיש קבוצה סופית של מס' ראשוניים.
+\end_layout
+
+\begin_layout Description
+העשרה: השערת גאוס מביאה נוסחה לכמות המס' הראשוניים בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $n$
+\end_inset
+
+ כלשהו.
+ לפי ההשערה יש בערך בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\begin_inset Formula $\frac{n}{ln(n)}$
+\end_inset
+
+ מספרים ראשוניים.
+\end_layout
+
+\end_body
+\end_document

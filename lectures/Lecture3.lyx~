@@ -1,0 +1,1212 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package auto
+\inputencoding iso8859-8
+\fontencoding global
+\font_roman "default" "FrankRuehl"
+\font_sans "default" "default"
+\font_typewriter "default" "Miriam"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+הרצאה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Section
+המשפט היסודי של תורת המספרים
+\end_layout
+
+\begin_layout Claim*
+בךשאם 
+\begin_inset Formula $p|a_{1}a_{2}\cdots a_{m}$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $i\le n$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $p|a_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+באינדוקציה על 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ הראינו כי אם 
+\begin_inset Formula $p$
+\end_inset
+
+ ראשוני וכן 
+\begin_inset Formula $p|a\cdot b$
+\end_inset
+
+ אזי 
+\begin_inset Formula $p|a$
+\end_inset
+
+ או 
+\begin_inset Formula $p|b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בסיס: עבור 
+\begin_inset Formula $m=2$
+\end_inset
+
+ זוהי הלמה המקורית.
+\end_layout
+
+\begin_layout Proof
+צעד: נניח נכונות לכל 
+\begin_inset Formula $m<k$
+\end_inset
+
+ ונראה עבור 
+\begin_inset Formula $m=k$
+\end_inset
+
+.
+ נתון לנו כי 
+\begin_inset Formula $p|a_{1}\cdots a_{k}$
+\end_inset
+
+.
+ נכתוב: 
+\begin_inset Formula $p|a_{1}\cdot(a_{2}\cdots a_{k})$
+\end_inset
+
+ ולכן לפי הלמה המקורית או ש 
+\begin_inset Formula $p|a_{1}$
+\end_inset
+
+ או ש-
+\begin_inset Formula $p|a_{2}\cdots a_{k}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $p|a_{1}$
+\end_inset
+
+ אז עבור 
+\begin_inset Formula $i=1$
+\end_inset
+
+ הטענה מתקיימת וסיימנו.
+ אם לא, אז 
+\begin_inset Formula $p|a_{2}\cdots a_{k}$
+\end_inset
+
+ ולפי הנחת האינדוקציה קיים 
+\begin_inset Formula $2\le i\le k$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Theorem*
+כל מספר טבעי 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+ מתפרק בצורה יחידה למספרים ראשוניים 
+\begin_inset Formula $n=p_{1}p_{2}\cdots p_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+פנראה תחילה שכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ מתפרק, באינדוקציה:
+\end_layout
+
+\begin_layout Proof
+בסיס: עבור 
+\begin_inset Formula $n=2$
+\end_inset
+
+, קיים פירוק למס' ראשוני: 
+\begin_inset Formula $2=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+צעד: נניח שזה נכון לכל 
+\begin_inset Formula $k<n$
+\end_inset
+
+ ונראה עבור 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ בחלוקה למקרים:
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $n$
+\end_inset
+
+ ראשוני, אז קיים הפירוק הטריוויאלי שהוא עצמו.
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $n$
+\end_inset
+
+ פריק, כלומר אינו ראשוני, אז קיימים 
+\begin_inset Formula $a,b\in\mathbb{N}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $n=a\cdot b$
+\end_inset
+
+ וכן 
+\begin_inset Formula $1<a,b<n$
+\end_inset
+
+.
+ לפי הנחת האינדוקציה מתקיים: 
+\begin_inset Formula $a=q_{1}\cdots q_{r}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $b=w_{1}\cdots w_{t}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $n=q_{1}\cdots q_{r}\cdot w_{1}\cdots w_{t}$
+\end_inset
+
+ וקיים פירוק כנדרש.
+\end_layout
+
+\begin_layout Proof
+נראה יחידות הפירוק:
+\end_layout
+
+\begin_layout Proof
+ניעזר בטענה שהוכחנו לעיל.
+ נתון לנו כי יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פירוקים באופן הבא: 
+\begin_inset Formula $n=p_{1}p_{2}\cdots p_{k}=q_{1}q_{2}\cdots q_{t}$
+\end_inset
+
+ ונרצה להוכיח כי בשני הפירוקים מופיעים בדיוק אותם מספרים.
+\end_layout
+
+\begin_layout Proof
+לפי ההנחה 
+\begin_inset Formula $p_{1}|n=q_{1}\cdots q_{t}$
+\end_inset
+
+, ולכן לפי הטענה שהוכחנו קיים 
+\begin_inset Formula $i\le t$
+\end_inset
+
+ כך ש: 
+\begin_inset Formula $p_{1}|q_{i}$
+\end_inset
+
+, מכייון ש-
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ראשוני, מתקיים 
+\begin_inset Formula $p_{1}=1$
+\end_inset
+
+ מה שלא ייתכן, או ש 
+\begin_inset Formula $p_{1}=q_{i}$
+\end_inset
+
+ ולכן זה מתקיים.
+\end_layout
+
+\begin_layout Proof
+כעת נבנה מס' 
+\begin_inset Formula $n_{1}$
+\end_inset
+
+ על ידי חלוקה ב-
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ ונקבל את המס': 
+\begin_inset Formula $n_{1}=p_{2}\cdots p_{k}=q_{1}\cdots\cancel{q_{i}}\cdots q_{t}$
+\end_inset
+
+ ובאופן דומה לשלב הקודם 
+\begin_inset Formula $p_{2}|q_{1}\cdots q_{j}\cdots q_{t}$
+\end_inset
+
+ ולכן קיים 
+\begin_inset Formula $j\ne i$
+\end_inset
+
+כך ש: 
+\begin_inset Formula $p_{2}|q_{j}$
+\end_inset
+
+.
+ נמשיך בצמצום ונקבל כי הפירוקים שווים.
+\end_layout
+
+\begin_layout Section
+חבורות
+\end_layout
+
+\begin_layout Standard
+חבורה היא קבוצה 
+\begin_inset Formula $G$
+\end_inset
+
+ )מלשון 
+\begin_inset Formula $Groups$
+\end_inset
+
+( עם פעולה אחת שתסומן בכמה סימונים: 
+\begin_inset Formula $\cdot$
+\end_inset
+
+ או 
+\begin_inset Formula $\text{+}$
+\end_inset
+
+ או פשוט שני משתנים צמודים למשל 
+\begin_inset Formula $ab$
+\end_inset
+
+.
+ הפעולה נדרשת לקיים כללים:
+\end_layout
+
+\begin_layout Enumerate
+אסוציאטיביות - 
+\begin_inset Formula $(a\cdot b)\cdot c=a\cdot(b\cdot c)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+קיים איבר אדיש שנסמנו 
+\begin_inset Formula $e$
+\end_inset
+
+ )מצרפתית -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+egal
+\lang hebrew
+, אדיש( שמקיים לכל איבר 
+\begin_inset Formula $a$
+\end_inset
+
+ בחבורה 
+\begin_inset Formula $e\cdot a=a\cdot e=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לכל איבר 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ קיים איבר הופכי 
+\begin_inset Formula $h$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $a\cdot h=e$
+\end_inset
+
+ )הופכי מימין(, ויש איבר 
+\begin_inset Formula $g$
+\end_inset
+
+ כך ש: 
+\begin_inset Formula $g\cdot a=e$
+\end_inset
+
+ )הופכי משמאל(.
+\end_layout
+
+\begin_layout Theorem*
+פההופכי מימין שווה להופכי משמאל
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $g\cdot a\cdot h$
+\end_inset
+
+ מתקיים כי מאסוציאטיביות: 
+\begin_inset Formula $(ga)h=eh=h$
+\end_inset
+
+ ומהכיוון השני 
+\begin_inset Formula $g(ah)=ge=g$
+\end_inset
+
+ ולכן סך הכל 
+\begin_inset Formula $g=h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם את הפעולה מסמנים ב- 
+\begin_inset Formula $\cdot$
+\end_inset
+
+ או ב
+\begin_inset Quotes erd
+\end_inset
+
+כלום
+\begin_inset Quotes erd
+\end_inset
+
+, אז את ההופכי נסמן ב
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+.
+ אם הפעולה מסומנת ב: 
+\begin_inset Formula $+$
+\end_inset
+
+ אז את ההופכי של 
+\begin_inset Formula $g$
+\end_inset
+
+ מסמנים ב-
+\begin_inset Formula $-g$
+\end_inset
+
+ והוא נקרא 
+\series bold
+נגדי
+\series default
+.
+\end_layout
+
+\begin_layout Claim*
+אם 
+\begin_inset Formula $h_{1},h_{2}$
+\end_inset
+
+ שניהם הופכיים מימין של 
+\begin_inset Formula $a$
+\end_inset
+
+ אזי 
+\begin_inset Formula $h_{!}=h_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+קיים גם הופכי משמאל 
+\begin_inset Formula $g$
+\end_inset
+
+ ומהמשפט הקודם הוכחנו כי 
+\begin_inset Formula $h_{1}=g$
+\end_inset
+
+ וגם כי 
+\begin_inset Formula $h_{2}=g$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $h_{1}=h_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+דוגמאות לחבורות
+\end_layout
+
+\begin_layout Standard
+למשל החבורה 
+\begin_inset Formula $(\mathbb{Z},+)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+האדיש: 
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדי: 
+\begin_inset Formula $-a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+חבורה אבלית - הפעולה קומטטיבית
+\end_layout
+
+\begin_layout Definition
+חבורה 
+\begin_inset Formula $G$
+\end_inset
+
+ עם פעולת 
+\begin_inset Formula $\cdot$
+\end_inset
+
+ תקרא קומטטיבית אם לכל 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $a\cdot b=b\cdot a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן את הפעולה ב-
+\begin_inset Formula $+$
+\end_inset
+
+ אנו למעשה מתחייבים כי החבורה היא אבלית )כלומר הפעולה קומטטיבית(.
+ אחרת לא מתחייבים על קומטטיביות בחבורה.
+\end_layout
+
+\begin_layout Subsection
+עוד דוגמאות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\mathbb{R},+),(\mathbb{C},+)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מרחבים וקטוריים עם +:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\mathbb{R}^{2},+)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קבוצת הפולינומיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\mathbb{R}[x],+)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\mathbb{Q}[x],+)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן להגדיר גם את 
+\begin_inset Formula $Q^{*}=Q\backslash\{0\}$
+\end_inset
+
+ ואז 
+\begin_inset Formula $(Q^{*},\cdot)$
+\end_inset
+
+.
+ כך גם 
+\begin_inset Formula $(\mathbb{R}^{*},\cdot)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $(\mathbb{C}^{*},\cdot)$
+\end_inset
+
+ אך 
+\begin_inset Formula $(\mathbb{Z}^{*},\cdot)$
+\end_inset
+
+ אינה חבורה.
+ עם זאת בתוכה מתחבאת החבורה: 
+\begin_inset Formula $(\{1,-1\},\cdot)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה לחבורה שאינה אבלית: חבורת המטריצות ההפיכות 
+\begin_inset Formula $M_{1}(2)$
+\end_inset
+
+מעל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ )בגודל 
+\begin_inset Formula $2\times2$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Claim*
+לכל חבורה ההופכי של 
+\begin_inset Formula $ab$
+\end_inset
+
+ הוא 
+\begin_inset Formula $b^{-1}a^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נכפיל: 
+\begin_inset Formula $(a\cdot b)\cdot(b^{-1}\cdot a^{-1})=abb^{-1}a^{-1}=aea^{-1}=aa^{-1}=e$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+דוגמה לחבורה סופית - שאריות
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $(\mathbb{Z}_{n},+)$
+\end_inset
+
+ חבורת השאריות 
+\begin_inset Formula $mod(n)$
+\end_inset
+
+.
+ הפעולה מוגדרת באופן הבא: 
+\begin_inset Formula $a+b$
+\end_inset
+
+ היא השארית של 
+\begin_inset Formula $a+b$
+\end_inset
+
+ מ-
+\begin_inset Formula $n$
+\end_inset
+
+.
+ סימון )לא לגמרי מדוייק(: 
+\begin_inset Formula $a+b=a+b(modn)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכחה כי זוהי באמת חבורה:
+\end_layout
+
+\begin_layout Enumerate
+אסוציאטיביות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מתקיימת באופן די ברור.
+\end_layout
+
+\begin_layout Enumerate
+קיים האדיש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בקבוצה.
+\end_layout
+
+\begin_layout Enumerate
+ההופכי של 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ הוא תמיד 
+\begin_inset Formula $n-a$
+\end_inset
+
+ בקבוצות 
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+איזומורפיזם
+\end_layout
+
+\begin_layout Standard
+לדוגמה החבורות 
+\begin_inset Formula $(\{0,1\},+)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $(\{1,-1\},\cdot\}$
+\end_inset
+
+ הן איזומורפיות שכן קיימת התאמה חח
+\begin_inset Quotes erd
+\end_inset
+
+ע ועל בין כל איבר בחבורה אחת לאחרת.
+ במקרה הזה קיימת התאמה 
+\begin_inset Formula $\Phi:\{0,1\}\rightarrow\{1,-1\}$
+\end_inset
+
+ המוגדרת: 
+\begin_inset Formula $\Phi(0)=1,\Phi(1)=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+תהיינה 
+\begin_inset Formula $G\text{,H}$
+\end_inset
+
+ חבורות וכן תהיינה העתקה 
+\begin_inset Formula $\Phi:G\rightarrow H$
+\end_inset
+
+, נאמר ש-
+\begin_inset Formula $\Phi$
+\end_inset
+
+ איזומורפיזם אם: 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ חח
+\begin_inset Quotes erd
+\end_inset
+
+ע ועל.
+\end_layout
+
+\begin_layout Remark*
+העתקה או טרנספורמציה תקרא לינארית אם היא שומרת את הפעולה, כלומר 
+\begin_inset Formula $T(a+b)=T(a)+T(b)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם קיים איזומורפיזם כזה, נאמר כי 
+\begin_inset Formula $G,H$
+\end_inset
+
+ איזומורפיות וכותבים 
+\begin_inset Formula $G\cong H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+חזרה לחבורות
+\end_layout
+
+\begin_layout Standard
+האם 
+\begin_inset Formula $(\mathbb{Z}_{n}^{*},\cdot)$
+\end_inset
+
+ חבורה? לא, להשלים.
+\end_layout
+
+\begin_layout Standard
+נסמן: 
+\begin_inset Formula $U_{10}$
+\end_inset
+
+ היא קבוצת המספרים ב-
+\begin_inset Formula $\mathbb{Z}_{10}$
+\end_inset
+
+ שזרים ל-
+\numeric on
+10
+\numeric off
+.
+ או 
+\begin_inset Formula $U_{n}$
+\end_inset
+
+ קבוצת המס' הזרים ב-
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+ ל-
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מעניין לראות כי מתקיים האיזומורפיזם: 
+\begin_inset Formula $(U_{10},\cdot)\cong(\mathbb{Z}_{4},+)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim*
+\begin_inset Formula $(U_{n},\cdot)$
+\end_inset
+
+ היא חבורה.
+\end_layout
+
+\begin_layout Proof
+קיים אדיש:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Proof
+נרצה להוכיח כי עבור 
+\begin_inset Formula $a,b\in U_{n}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $a\cdot b\in U_{n}$
+\end_inset
+
+.
+ כלומר אם 
+\begin_inset Formula $a,b$
+\end_inset
+
+ זרים ל-
+\begin_inset Formula $n$
+\end_inset
+
+ אזי 
+\begin_inset Formula $a\cdot b$
+\end_inset
+
+ זר ל-
+\begin_inset Formula $n$
+\end_inset
+
+.
+ נתון כי ל
+\begin_inset Formula $a,b$
+\end_inset
+
+ אין מחלק ראשוני משותף עם 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ נניח בשלילה כי ל-
+\begin_inset Formula $a\cdot b$
+\end_inset
+
+ יש מחלק ראשוני משותף 
+\begin_inset Formula $p$
+\end_inset
+
+ עם 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $p|ab$
+\end_inset
+
+ וגם 
+\begin_inset Formula $p|n$
+\end_inset
+
+ ואז לפי משפט 
+\begin_inset Formula $p|a\vee p|b\wedge p|n$
+\end_inset
+
+ וזאת סתירה לנתון.
+\end_layout
+
+\begin_layout Proof
+נרצה להוכיח כי קיים הופכי.
+ אם 
+\begin_inset Formula $a\in U_{n}$
+\end_inset
+
+ אז יש 
+\begin_inset Formula $b$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $ab\equiv1mod(n)$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $a\in U_{n}$
+\end_inset
+
+ פרושו 
+\begin_inset Formula $gcd(a,n)=1$
+\end_inset
+
+ ולכן קיימים 
+\begin_inset Formula $k,l$
+\end_inset
+
+ כך ש: 
+\begin_inset Formula $ka+ln=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $ka=1-ln\equiv1(modn)$
+\end_inset
+
+ ולכן ניקח 
+\begin_inset Formula $b=k(modn)$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

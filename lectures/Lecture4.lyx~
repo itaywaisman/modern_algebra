@@ -1,0 +1,1576 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+fixltx2e
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package auto
+\inputencoding iso8859-8
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "default"
+\font_typewriter "default" "Miriam"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+הרצאה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Author
+כותב: איתי ווייסמן, מרצה: רון אהרוני
+\end_layout
+
+\begin_layout Section
+דוגמאות של חבורות
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $U_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{n}=\{o\le a<n|gcd(a,n)=1\}$
+\end_inset
+
+עם הפעולה כפל 
+\begin_inset Formula $mod(n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+למשל: 
+\begin_inset Formula $U_{10}=\{1,3,6,9\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד דוגמה מעניינת: 
+\begin_inset Formula $U_{12}=\{1,5,7,11\}$
+\end_inset
+
+.
+ בחבורה זו מתקיימת התכונה המעניינת: כל איבר הוא ההופכי של עצמו.
+ לחבורה כזו יש שם מיוחד: 
+\series bold
+חבורת קליין
+\series default
+.
+\end_layout
+
+\begin_layout Claim
+טענה: 
+\begin_inset Formula $U_{n}$
+\end_inset
+
+חבורה
+\end_layout
+
+\begin_layout Standard
+קל יחסית להוכיח אסוציאטיביות.
+ נרצה להוכיח כי קיים הופכי.
+\end_layout
+
+\begin_layout Proof
+
+\end_layout
+
+\begin_layout Proof
+צריך להוכיח כי מתקיים שלכל 
+\begin_inset Formula $a\in U_{n}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $k\in U_{n}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $k\cdot a=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נזכר כי מתקיים 
+\begin_inset Formula $\exists k,l\in U_{n}:ka+ln=1\iff(a,n)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+מכיוון שאנחנו עושים כפל מודולו 
+\begin_inset Formula $\text{n}$
+\end_inset
+
+, מתקיים: 
+\begin_inset Formula $ka=1-ln\equiv_{n}1$
+\end_inset
+
+.
+ נשאלה השאלה: האם 
+\begin_inset Formula $k\in U_{n}$
+\end_inset
+
+, כלומר מהגדרת 
+\begin_inset Formula $U_{n}$
+\end_inset
+
+ האם מתקיים 
+\begin_inset Formula $(k,n)=1$
+\end_inset
+
+? וזה בהחלט מתקיים כי המשפט המקורי )שכתבנו מה
+\begin_inset Quotes erd
+\end_inset
+
+זווית
+\begin_inset Quotes erd
+\end_inset
+
+ של 
+\begin_inset Formula $a$
+\end_inset
+
+ תקף גם מהזווית של 
+\begin_inset Formula $k$
+\end_inset
+
+( הוא אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ, ולכן 
+\begin_inset Formula $k$
+\end_inset
+
+ זר ל-
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+להוכחה זו חסר רק להראות כי מכפלה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מספרים ב-
+\begin_inset Formula $U_{n}$
+\end_inset
+
+ היא גם ב-
+\begin_inset Formula $U_{n}$
+\end_inset
+
+ )סגירות לפעולה(.
+ כלומר:
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $(a,n)=1$
+\end_inset
+
+ וגם 
+\begin_inset Formula $(b,n)=1$
+\end_inset
+
+ אזי 
+\begin_inset Formula $(ab,n)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+לפי הנתון, ולפי משפט )מהתזכורת מקודם( קיימים 
+\begin_inset Formula $k,l$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $ka+ln=1$
+\end_inset
+
+, כך גם עבור 
+\begin_inset Formula $b$
+\end_inset
+
+ קיימים 
+\begin_inset Formula $k',l'$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $k'b+l'n=1$
+\end_inset
+
+.
+ נכפול את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המשוואות:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $kk'ab+(kal'+lk'b+ll'n)n=1$
+\end_inset
+
+ ולכן שוב מהמשפט, זהו צירוף של 
+\begin_inset Formula $ab$
+\end_inset
+
+ ושל 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $(ab,n)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+דוגמה נוספת - 
+\begin_inset Formula $U_{7}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{7}=\{1,2,3,4,5,6\}$
+\end_inset
+
+ עם הפעולה כפל מודולו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+מתקיים: 
+\begin_inset Formula $(U_{7},\cdot mod(n))=(Z_{7}^{*},\cdot)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הקדמה להמשך הסמסטר: 
+\begin_inset Formula $Z_{p}$
+\end_inset
+
+ הוא שדה )כלומר חבורה גם ביחס לכפל וגם ביחס לחיבור( כאשר 
+\begin_inset Formula $p$
+\end_inset
+
+ ראשוני.
+\end_layout
+
+\begin_layout Section
+הגודל של 
+\begin_inset Formula $U_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגודל של 
+\begin_inset Formula $U_{n}$
+\end_inset
+
+ מסומן 
+\begin_inset Formula $|U_{n}|$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\Phi(n)$
+\end_inset
+
+ וסדרת מספרים זו נקראת מספרי אויילר.
+\end_layout
+
+\begin_layout Standard
+עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתקיים 
+\begin_inset Formula $\Phi(7)=6$
+\end_inset
+
+, ובכללי עבור 
+\begin_inset Formula $p$
+\end_inset
+
+ ראשוני 
+\begin_inset Formula $\Phi(p)=p-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עוד דוגמה: 
+\begin_inset Formula $\Phi(1024)=\Phi(2^{10})=512$
+\end_inset
+
+ שכן כל המספרים האי זוגיים עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1024
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זרים ל
+\numeric on
+1024
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)הוא מכפלה רק של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+דוגמה נוספת: 
+\begin_inset Formula $\Phi(120)$
+\end_inset
+
+.
+ מי זר ל-
+\numeric on
+120
+\numeric off
+? מתקיים 
+\begin_inset Formula $120=2^{3}\cdot3\cdot5$
+\end_inset
+
+.
+ כמה מספרים מתחלקים ב-
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או ב-
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או ב-
+\numeric on
+5
+\numeric off
+? נחסיר אותם מ-
+\numeric on
+120
+\numeric off
+, אך נשים לב שיש כפילויות )כאלה שמתחלקים גם ב-
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וגם ב-
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למשל(.
+ למעשה צריך להשתמש במשפט ההכלה והפרדה.
+ 
+\begin_inset Formula $120-120\cdot\frac{1}{2}-120\cdot\frac{1}{3}-120\cdot\frac{1}{5}+120\cdot\frac{1}{2}\cdot\frac{1}{3}+120\cdot\frac{1}{2}\cdot\frac{1}{5}+120\cdot\frac{1}{3}\cdot\frac{1}{5}-120\cdot\frac{1}{2}\cdot\frac{1}{3}\cdot\frac{1}{5}=32$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+בניה של חבורות מחבורות קודמות
+\end_layout
+
+\begin_layout Subsection
+סכום ישר
+\end_layout
+
+\begin_layout Definition
+חבורת כל ה
+\series bold
+זוגות
+\series default
+ במספרים הממשיים:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(\mathbb{R}^{2},+)=\{(x,y)|x\in\mathbb{R},y\in\mathbb{R}\}=\mathbb{R}\oplus\mathbb{R}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כאשר החיבור הישר מקיים: 
+\begin_inset Formula $(x_{1},y_{1})+(x_{2},y_{2})=(x_{1}+x_{2},y_{1}+y_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+תהיינה 
+\begin_inset Formula $G,H$
+\end_inset
+
+ חבורות.
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $G\oplus H=\{(g,h)|g\in G,h\in H\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ועבור פעולת הכפל מתקיים: 
+\begin_inset Formula $(g_{1},h_{1})\cdot(g_{2},h_{2})=(g_{1}g_{2},h_{1}h_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+די טריוואלי להראות שזו חבורה.
+\end_layout
+
+\begin_layout Example
+קעבור החבורה 
+\begin_inset Formula $(Z_{2},+)$
+\end_inset
+
+ נביא לדוגמה את הסכום הישר עם עצמה: 
+\begin_inset Formula $(Z_{2},+)\oplus(Z_{2},+)$
+\end_inset
+
+.
+ כמה איברים יהיו בו? כמו במכפלה קרטזית -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+איברים: 
+\begin_inset Formula $Z_{2}\oplus Z_{2}=\{(1,0),(0,1),(0,0),(1,1)\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+האם החבורה הזו איזומורפית ל-
+\begin_inset Formula $Z_{4}$
+\end_inset
+
+? למרות שגם ב- 
+\begin_inset Formula $Z_{4}$
+\end_inset
+
+ יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+איברים, לא מתקיימת איזומורפיות שכן ב-
+\begin_inset Formula $Z_{4}$
+\end_inset
+
+ לא מתקיימת תכונת חבורת קליין שכן מתקיימת בסכום הישר.
+\end_layout
+
+\begin_layout Standard
+מסתבר ש
+\begin_inset Formula $U_{12}$
+\end_inset
+
+ איזומורפית ל-
+\begin_inset Formula $Z_{2}\oplus Z_{2}$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+נביא לדוגמה את 
+\begin_inset Formula $Z_{2}\oplus Z_{3}$
+\end_inset
+
+.
+ יהיו בה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+איברים: 
+\begin_inset Formula $Z_{2}\oplus Z_{3}=\{(0,0),(0,1),(0,2),(1,0),(1,1),(1,2)\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לדוגמה: 
+\begin_inset Formula $(0,2)+(1,2)=(1,1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מה ההופכי של 
+\begin_inset Formula $(1,2)$
+\end_inset
+
+? מתקיים 
+\begin_inset Formula $-(1,2)=(1,1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מפתיע לגלות, כי 
+\begin_inset Formula $Z_{2}\oplus Z_{3}$
+\end_inset
+
+ איזומורפית ל-
+\begin_inset Formula $Z_{6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim
+אם 
+\begin_inset Formula $(a,b)=1$
+\end_inset
+
+ אזי 
+\begin_inset Formula $Z_{a}\oplus Z_{b}\cong Z_{ab}$
+\end_inset
+
+.
+ זאת נוכיח בהמשך על ידי המושג תת חבורה שנגדיר כעת.
+\end_layout
+
+\begin_layout Section
+תת חבורה
+\end_layout
+
+\begin_layout Standard
+בהינתן חבורה 
+\begin_inset Formula $G$
+\end_inset
+
+, תת חבורה 
+\begin_inset Formula $H$
+\end_inset
+
+ היא תת קבוצה שהיא חבורה לגבי הפעולה ב-
+\begin_inset Formula $G$
+\end_inset
+
+.
+ נסמן: 
+\begin_inset Formula $H<G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+עבור החבורה 
+\begin_inset Formula $Z_{6}=\{0,1,2,3,4,5\}$
+\end_inset
+
+ קיימות תתי החבורות:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $H=\{0\},H=\{0,2,4\},H=\{0,3\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
+תת קבוצה לא ריקה 
+\begin_inset Formula $H$
+\end_inset
+
+ של 
+\begin_inset Formula $G$
+\end_inset
+
+ היא תת חבורה אם ורק אם 
+\begin_inset Formula $H$
+\end_inset
+
+ סגורה לפעולה )לכל 
+\begin_inset Formula $h_{1},h_{2}\in H$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $h_{1}\cdot h_{2}\in H$
+\end_inset
+
+( וסגורה להופכי )אם 
+\begin_inset Formula $h\in H$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $h^{-1}\in H$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Theorem
+משפט לגראנז'.
+ אם 
+\begin_inset Formula $H<G$
+\end_inset
+
+ אזי מתקיים 
+\begin_inset Formula $|H|||G|$
+\end_inset
+
+ )הגודל של 
+\begin_inset Formula $H$
+\end_inset
+
+ מחקל את הגודל של 
+\begin_inset Formula $G$
+\end_inset
+
+(.
+ 
+\end_layout
+
+\begin_layout Corollary
+לחבורה מסדר ראשוני יש רק שתי תתי חבורות - הטריויאליות.
+\end_layout
+
+\begin_layout Subsection
+סדר של איבר
+\end_layout
+
+\begin_layout Definition
+תהא 
+\begin_inset Formula $G$
+\end_inset
+
+ חבורה, 
+\begin_inset Formula $g\in G$
+\end_inset
+
+.
+ הסדר של 
+\begin_inset Formula $g$
+\end_inset
+
+ שמסומן ב-
+\begin_inset Formula $o(g)$
+\end_inset
+
+ הוא ה-
+\begin_inset Formula $k$
+\end_inset
+
+ הראשון כך ש-
+\begin_inset Formula $g^{k}=g\cdot g\cdot g\cdots g=e$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר את הכפל 
+\begin_inset Formula $g^{k}=g\cdot g\cdots g$
+\end_inset
+
+, ואם הפעולה היא חיבור: 
+\begin_inset Formula $g^{k}=g+g+g\cdots+g=k\cdot g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+סדר של איבר מחלק את סדר החבורה: 
+\begin_inset Formula $o(g)||G|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+חבורת החזקות של איבר
+\end_layout
+
+\begin_layout Standard
+יהא 
+\begin_inset Formula $g$
+\end_inset
+
+ איבר מסדר 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\left\langle g\right\rangle =\{g^{0}=e,g^{1}=g,\cdots g^{k-1}\}$
+\end_inset
+
+.
+ נשים לב שיש כאן 
+\begin_inset Formula $k$
+\end_inset
+
+ איברים.
+\end_layout
+
+\begin_layout Claim
+טענה
+\end_layout
+
+\begin_layout Standard
+מתקיים 
+\begin_inset Formula $\left\langle g\right\rangle <G$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left\langle g\right\rangle $
+\end_inset
+
+ תת חבורה של ׂ
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נוכיח:
+\end_layout
+
+\begin_layout Proof
+סגירות לכפל: 
+\begin_inset Formula $g^{i},g^{j}\in\left\langle g\right\rangle $
+\end_inset
+
+, נראה כי 
+\begin_inset Formula $g^{i}g^{j}\in\left\langle g\right\rangle $
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $g^{i}g^{j}=g^{i+j}$
+\end_inset
+
+.
+ זה כמעט טוב לנו.
+ מתקיים: 
+\begin_inset Formula $g^{i+j}=g^{(i+j)(modk)}\in\left\langle g\right\rangle $
+\end_inset
+
+ ולכן יש סגירות לכפל.
+\end_layout
+
+\begin_layout Proof
+סגירות להופכי: 
+\begin_inset Formula $(g^{i})^{-1}=g^{k-i}$
+\end_inset
+
+.
+ מתקיים: 
+\begin_inset Formula $g^{i}g^{k-i}=g^{k}=e$
+\end_inset
+
+ ולכן תמיד קיים הופכי ב
+\begin_inset Formula $\left\langle g\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+אם 
+\begin_inset Formula $G$
+\end_inset
+
+ סופית, אז לכל איבר 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ יש סדר, כלומר יש 
+\begin_inset Formula $k$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $g^{k}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $n=|G|$
+\end_inset
+
+.
+ נתבונן ב-
+\begin_inset Formula $g,g^{2},g^{3}\cdots g^{k},g^{k+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+אם אחד מהם שווה 
+\begin_inset Formula $e$
+\end_inset
+
+ - זה מוכיח את הנדרש.
+\end_layout
+
+\begin_layout Proof
+אחרת יש ל-
+\begin_inset Formula $g^{i}$
+\end_inset
+
+ רק 
+\begin_inset Formula $n-1$
+\end_inset
+
+ אפשרויות, ולכן לפי עקרון שובך היונים יש לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בעלי אותו הערך.
+ כלומר 
+\begin_inset Formula $g^{i}=g^{j}$
+\end_inset
+
+ ובפירוט: 
+\begin_inset Formula $gggg\cdots g=gg\cdots g$
+\end_inset
+
+.
+ אם נצמצם ב
+\begin_inset Formula $g^{j}$
+\end_inset
+
+ נקבל: 
+\begin_inset Formula $g^{j-i}=e$
+\end_inset
+
+.
+ ולכן קיימת חזקה שמביאה לנו את 
+\begin_inset Formula $e$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_body
+\end_document

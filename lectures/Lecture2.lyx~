@@ -1,0 +1,1300 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "FrankRuehl"
+\font_sans "default" "default"
+\font_typewriter "default" "Miriam"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+הרצאה
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Author
+כותב: איתי ווייסמן, מרצה: רון אהרוני
+\end_layout
+
+\begin_layout Standard
+בהינתן שני מספרים 
+\begin_inset Formula $m,n$
+\end_inset
+
+ מספר 
+\begin_inset Formula $a$
+\end_inset
+
+ נקרא מחלק משותף אם 
+\begin_inset Formula $a|m$
+\end_inset
+
+ וגם 
+\begin_inset Formula $a|n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+האם לכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מספרים יש מחלק משותף? התשובה היא כן, שכן עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתקיים 
+\begin_inset Formula $1|m$
+\end_inset
+
+ וכן 
+\begin_inset Formula $1|n$
+\end_inset
+
+ לכל 
+\begin_inset Formula $m,n$
+\end_inset
+
+ כאלה.
+\end_layout
+
+\begin_layout Standard
+מעניין למצוא את המחלק המשותף הגדול ביותר, יסומן ממג
+\begin_inset Quotes erd
+\end_inset
+
+ב, או 
+\begin_inset Formula $(m,n)$
+\end_inset
+
+ ובסימון מלא 
+\begin_inset Formula $gcd(m,n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+למשל עבור: 
+\begin_inset Formula $(120,80)=40$
+\end_inset
+
+, עבור 
+\begin_inset Formula $(2019,81)=3$
+\end_inset
+
+ ניתן לגלות כי שניהם מתחלקים ב-
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לפי כלל חלוקה.
+ עבור 
+\begin_inset Formula $(1003,2018)=1$
+\end_inset
+
+ שכן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1003
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא ראשוני.
+ 
+\begin_inset Formula $(1003,2006)=1003$
+\end_inset
+
+ למרות ש
+\numeric on
+1003
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ראשוני, הוא מתחלק בעצמו.
+\end_layout
+
+\begin_layout Section
+מכפלה משדותפת
+\end_layout
+
+\begin_layout Standard
+מכפלה משותפת של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מספרים 
+\begin_inset Formula $m,n$
+\end_inset
+
+ הוא מספר המתחלק גם ב-
+\begin_inset Formula $m$
+\end_inset
+
+ וגם ב-
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה למכפלה משותפת של 
+\begin_inset Formula $120,80$
+\end_inset
+
+ היא 
+\begin_inset Formula $120\times80$
+\end_inset
+
+, אך מעניין למצוא את המכפלה המשותפת הקטנה ביותר שהיא 
+\begin_inset Formula $240$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נרצה למצוא את המכפלה המשותפת המינימאלית של 
+\begin_inset Formula $m,n$
+\end_inset
+
+ והיא מסומנת ב-
+\begin_inset Formula $[m,n]$
+\end_inset
+
+ ובסימון מלא 
+\begin_inset Formula $l.c.m(m,n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עבור הדוגמה שלנו: 
+\begin_inset Formula $l.c.m(120,80)=240$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+איך מוצאים את 
+\begin_inset Formula $l.c.m(m,n)$
+\end_inset
+
+ ואת 
+\begin_inset Formula $gcd(m,n)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+מפרקים לפירוק ראשוני: 
+\begin_inset Formula $120=2\cdot2\cdot2\cdot3\cdot5$
+\end_inset
+
+ ועבור 
+\begin_inset Formula $80=2^{4}\cdot5$
+\end_inset
+
+.
+ כך קל למצוא את 
+\begin_inset Formula $gcd(120,80)=5\cdot2^{3}$
+\end_inset
+
+ שכן אלה נמצאים ב
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הפירוקים )החיתוך של הפירוקים(.
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $l.c.m$
+\end_inset
+
+: 
+\begin_inset Formula $l.c.m(120,80)=2^{4}\cdot3\cdot5$
+\end_inset
+
+, לקחנו סוג של איחוד של הפירוקים, כך שלקחנו את החזקה המקסימלית מכל מחלק
+ בפירוקים.
+\end_layout
+
+\begin_layout Standard
+פורמאלית, אם קיימים הפירוקים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m=p_{1}^{k_{1}}\cdot p_{2}^{k_{2}}\cdots p_{l}^{k_{r}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=p_{1}^{l_{1}}\cdot p_{2}^{l_{2}}\cdots p_{r}^{l_{r}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לשם שחלק מה 
+\begin_inset Formula $k_{i}$
+\end_inset
+
+ וכן חלק מה-
+\begin_inset Formula $l_{i}$
+\end_inset
+
+ יכולים להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן לא יכללו בפירוק.
+\end_layout
+
+\begin_layout Standard
+מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $gcd(m,n)=p_{1}^{min\{k_{1}l_{1}\}}\cdots p_{r}^{min\{k_{r},l_{r}\}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l.c.m(m,n)=p_{1}^{max\{k_{1}l_{1}\}}\cdots p_{r}^{max\{k_{r},l_{r}\}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim*
+מתקים 
+\begin_inset Formula $gcd(m,n)\cdot l.c.m(m,n)=m\cdot n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ אם מכפילים את את המס' על פי הגדרתם לעיל, נקבל כי לכל 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ החזקה היא חיבור החזקות התואמות של כל פירוק ולכן מחוקי חזקות קל להפריד למס'
+ 
+\begin_inset Formula $m,n$
+\end_inset
+
+ המקוריים.
+\end_layout
+
+\begin_layout Standard
+למעשה זהו המחלק המשותף המקסימלי ובעזרת שיטה זו קל יחסית למצוא אותו.
+\end_layout
+
+\begin_layout Subsection*
+אלגוריתם למציאת 
+\begin_inset Formula $m,n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ראשית נוכיח משפט: 
+\begin_inset Formula $(m,n)$
+\end_inset
+
+ הוא צירוף לינארי של 
+\begin_inset Formula $m,n$
+\end_inset
+
+, כלומר: 
+\begin_inset Formula $(m,n)=a\cdot m+b\cdot n$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למשל מתקיים: 
+\begin_inset Formula $40=(120,80)=1\cdot120-1\cdot80$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור: 
+\begin_inset Formula $1=(19,7)=3\cdot19-8\cdot7$
+\end_inset
+
+ )לא מאוד קל למצוא את זה ישר(.
+\end_layout
+
+\begin_layout Standard
+האלגוריתם שנציג, ימצא לנו את 
+\begin_inset Formula $a,b$
+\end_inset
+
+ הללו.
+ נשים לב כי קיימים אינסוף זוגות 
+\begin_inset Formula $a,b$
+\end_inset
+
+ שמתאימים לנו.
+\end_layout
+
+\begin_layout Description
+הוכחה נוכיח בצורה שאינה קונסטרוקטיבית, דהיינו נוכיח שקיים הצירוף הזה אך
+ לא נראה איך להשיג אותו )זה נעשה באמצעות האלגוריתם(.
+\begin_inset Newline newline
+\end_inset
+
+תזכורת: הראנו שאם 
+\begin_inset Formula $S\subseteq\mathbb{Z}$
+\end_inset
+
+ סגורה לחיבור ולחיסור אז 
+\begin_inset Formula $S=k\cdot\mathbb{Z}$
+\end_inset
+
+ כלומר כל המס' המתחלקים ב
+\begin_inset Formula $k$
+\end_inset
+
+.
+ )הערה: אם 
+\begin_inset Formula $S$
+\end_inset
+
+ סגורה לחיסור אז היא סגורה גם לחיבור(.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $S$
+\end_inset
+
+ קבוצת כל הצירופים של 
+\begin_inset Formula $m,n$
+\end_inset
+
+, דהיינו: 
+\begin_inset Formula $S=\{a\cdot n+b\cdot m\vert a,b\in\mathbb{Z}\}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+טענה: 
+\begin_inset Formula $S$
+\end_inset
+
+ סגורה לחיסור.
+ נוכיח על פי ההגדרה: יהיו 
+\begin_inset Formula $x=a_{1}m+b_{1}n\in S$
+\end_inset
+
+ וכן 
+\begin_inset Formula $y=a_{2}m+b_{2}n\in S$
+\end_inset
+
+ אזי מתקיים: 
+\begin_inset Formula $x-y=(a_{1}-a_{2})m-(b_{1}-b_{2})n$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x-y\in S$
+\end_inset
+
+ עפ
+\begin_inset Quotes erd
+\end_inset
+
+ׁ הגדרת 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ באופן דומה 
+\begin_inset Formula $S$
+\end_inset
+
+ סגורה לחיבור.
+ לכן 
+\begin_inset Formula $k\in S$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+טענה: 
+\begin_inset Formula $k=(m,n)$
+\end_inset
+
+, אם נוכיח זאת אזי יתקיים 
+\begin_inset Formula $k=am+bn$
+\end_inset
+
+ כי הוא ב
+\begin_inset Formula $S$
+\end_inset
+
+ וסיימנו.
+\begin_inset Newline newline
+\end_inset
+
+נוכיח: 
+\begin_inset Formula $k|m,k|n$
+\end_inset
+
+ ולאחר מכן נוכיח שהוא הגדול ביותר.
+ 
+\begin_inset Formula $m=1\cdot m+0\cdot n$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $m\in S$
+\end_inset
+
+.
+ באותו אופן 
+\begin_inset Formula $n=0\cdot m+1\cdot n$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $n\in S$
+\end_inset
+
+.
+ מכך ש 
+\begin_inset Formula $S=k\mathbb{Z}$
+\end_inset
+
+, אזי מתקיים 
+\begin_inset Formula $m=q\cdot k$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $k|m$
+\end_inset
+
+ ובאופן דומה 
+\begin_inset Formula $k|n$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $k$
+\end_inset
+
+ מחלק משותף.
+ נוכיח מקסימליות: כלומר לכל מחלק משותף 
+\begin_inset Formula $l$
+\end_inset
+
+ אז 
+\begin_inset Formula $l\le k$
+\end_inset
+
+.
+ נראה ש: 
+\begin_inset Formula $l|k$
+\end_inset
+
+.
+ נתון לנו כי 
+\begin_inset Formula $l|m$
+\end_inset
+
+ וגם 
+\begin_inset Formula $l|n$
+\end_inset
+
+ ולכן מתקיים: 
+\begin_inset Formula $l|am$
+\end_inset
+
+ וכן 
+\begin_inset Formula $l|bn$
+\end_inset
+
+ ולכן גם 
+\begin_inset Formula $l|am+bn$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $l|k$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $l\le k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+אלגוריתם אוקלידס - מציאת 
+\begin_inset Formula $a,b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הראנו 
+\begin_inset Formula $(19,7)=1$
+\end_inset
+
+ )נדבר בהמשך על המקרה המיוחד הזה בו ה
+\begin_inset Formula $gcd(m,n)=1$
+\end_inset
+
+, כלומר המספרים זרים(.
+\end_layout
+
+\begin_layout Standard
+מתקיים: 
+\begin_inset Formula $19=2\cdot7+5$
+\end_inset
+
+.
+ ולכן 
+\begin_inset Formula $5=19-2\cdot7$
+\end_inset
+
+ ולכן לאחר הצבה חזרהת מהמשפט שהראנו 
+\begin_inset Formula $k|5$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+מתקיים: 
+\begin_inset Formula $7=1\cdot5+2$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $2=7-1\cdot5$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $k|2$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+נמשיך: 
+\begin_inset Formula $5=2\cdot2+1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $1=5-2\cdot2$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $k|1$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+ולכן 
+\begin_inset Formula $k=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה: יהיו 
+\begin_inset Formula $\text{m,n,a\ensuremath{\in\mathbb{N}}}$
+\end_inset
+
+.
+ מספר 
+\begin_inset Formula $k$
+\end_inset
+
+ מחלק את 
+\begin_inset Formula $m$
+\end_inset
+
+ וגם מחלק את 
+\begin_inset Formula $n$
+\end_inset
+
+ אם ורק אם 
+\begin_inset Formula $k$
+\end_inset
+
+ מחלק את 
+\begin_inset Formula $n$
+\end_inset
+
+ ואת 
+\begin_inset Formula $m-na$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Description
+הוכחה: נניח ש 
+\begin_inset Formula $k$
+\end_inset
+
+ מחלק את 
+\begin_inset Formula $m$
+\end_inset
+
+ ואת 
+\begin_inset Formula $n$
+\end_inset
+
+, אז 
+\begin_inset Formula $k|n$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $k|na$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $k|m-na$
+\end_inset
+
+.
+ באופן דומה בכיוון ההפוך.
+\end_layout
+
+\begin_layout Description
+מסקנה: אם 
+\begin_inset Formula $(m,n)=1$
+\end_inset
+
+ אם ורק אם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $1$
+\end_inset
+
+ הוא צירוף שלהם, כלומר קיימים 
+\begin_inset Formula $a,b$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $am+bn=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הוכחה: כיוון ראשון, אם 
+\begin_inset Formula $(m,n)=1$
+\end_inset
+
+ אזי כמו שהראנו קודם 
+\begin_inset Formula $am+bn=1$
+\end_inset
+
+.
+ בכיוון השני, נניח ש
+\begin_inset Formula $am+bn=1$
+\end_inset
+
+, נראה ש 
+\begin_inset Formula $(m,n)=1$
+\end_inset
+
+.
+ יהא 
+\begin_inset Formula $x$
+\end_inset
+
+ מחלק משותף, נראה כי 
+\begin_inset Formula $x=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $x|a\wedge x|b\Rightarrow x|am+bn=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה: אם 
+\begin_inset Formula $p$
+\end_inset
+
+ ראשוני, וכן 
+\begin_inset Formula $p|mn$
+\end_inset
+
+ אזי 
+\begin_inset Formula $p|m$
+\end_inset
+
+ או 
+\begin_inset Formula $p|n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הוכחה: נניח בשלילה כי הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל לא מתקיים, כלומר 
+\begin_inset Formula $p$
+\end_inset
+
+ לא מחלק את 
+\begin_inset Formula $m$
+\end_inset
+
+ ולא מחלק את 
+\begin_inset Formula $n$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $gcd(p,m)=gcd(p,n)=1$
+\end_inset
+
+.
+ לפי הטענה לעיל מתקיים 
+\begin_inset Formula $1=ap+bm$
+\end_inset
+
+ א וכן 
+\begin_inset Formula $1=cp+dn$
+\end_inset
+
+.
+ נכפול את המשוואת ונקבל 
+\begin_inset Formula $1=(cp+dn)(ap+bm)=p(acp+bmc+adn)+bdmn$
+\end_inset
+
+ אך ממשוואה זו נשים לב כי 
+\begin_inset Formula $p|mn$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $p|1$
+\end_inset
+
+ בסתירה לכך של-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחלק יחיד, הוא עצמו.
+\end_layout
+
+\end_body
+\end_document

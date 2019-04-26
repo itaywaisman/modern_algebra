@@ -1,0 +1,895 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+fixltx2e
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package auto
+\inputencoding iso8859-8
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "default"
+\font_typewriter "default" "Miriam"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+הרצאה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Section
+חבורות ציקליות
+\end_layout
+
+\begin_layout Subsection
+תזכורת
+\end_layout
+
+\begin_layout Standard
+בשיעור הקודם הראינו: בחבורה סופית לכל איבר יש סדר.
+ לכל איבר 
+\begin_inset Formula $g$
+\end_inset
+
+ קיים 
+\begin_inset Formula $k$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $g^{k}=e$
+\end_inset
+
+.
+ ה-
+\begin_inset Formula $k$
+\end_inset
+
+ המינימלי נקרא הסדר של 
+\begin_inset Formula $g$
+\end_inset
+
+ ומסומן 
+\begin_inset Formula $o(g)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הגדרנו את תת-החבורה שנוצרת על ידי 
+\begin_inset Formula $g$
+\end_inset
+
+ בתור: 
+\begin_inset Formula $<g>=g^{0}\cdot g^{1}\cdots g^{k-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+עבור 
+\begin_inset Formula $(\mathbb{Z}_{12},+)$
+\end_inset
+
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $<3>=\{0,3,3+3=6,9\}$
+\end_inset
+
+ ומכיוון ש-
+\begin_inset Formula $3+3+3+3=0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $o(3)=4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem*
+הצגנו את משפט לגרנז': 
+\begin_inset Formula $H<G$
+\end_inset
+
+ אזי 
+\begin_inset Formula $|H|||G|$
+\end_inset
+
+.
+ ולכן עבור הדוגמה שלנו מתקיים 
+\begin_inset Formula $o(3)=4|12$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Corollary*
+סדר של איבר מחלק את סדר החבורה.
+ כלומר עבור 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ אזי 
+\begin_inset Formula $o(g)||G|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim
+מסקנה: אם הסדר של 
+\begin_inset Formula $|G|=n$
+\end_inset
+
+ אז: 
+\begin_inset Formula $g^{n}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+יהא 
+\begin_inset Formula $k=o(g)$
+\end_inset
+
+.
+ אז אמרנו כי: 
+\begin_inset Formula $k|n$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $n=a\cdot k$
+\end_inset
+
+.
+ ואז: 
+\begin_inset Formula $g^{n}=g^{k\cdot a}=(g^{k})^{a}=e^{a}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+חבורה ציקלית
+\end_layout
+
+\begin_layout Definition*
+אם חבורה 
+\begin_inset Formula $G=<g>$
+\end_inset
+
+ אומרים ש
+\begin_inset Formula $G$
+\end_inset
+
+ היא ציקלית ל
+\begin_inset Formula $g$
+\end_inset
+
+ וש-
+\begin_inset Formula $g$
+\end_inset
+
+ יוצר שלה.
+ היא נראית כך: 
+\begin_inset Formula $G=\{e,g,g^{1}.g^{2}\cdots g^{k-1}\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ היא ציקלית והיוצר שלה הוא 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ ולכן נסמן 
+\begin_inset Formula $Z_{n}=<1>$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem*
+כל חבורה ציקלית מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ איזומורפית ל-
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $G$
+\end_inset
+
+ ציקלית מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ אזי קיים 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $G=<g>$
+\end_inset
+
+ והיא נראית כך: 
+\begin_inset Formula $G=\{e,g,g^{2}\cdots g^{n-1}\}$
+\end_inset
+
+ וזה איזומורפי ל-
+\begin_inset Formula $\mathbb{Z}_{n}=\{0,1,2,3,...,n-1\}$
+\end_inset
+
+.
+ האיזומורפיזם הוא: 
+\begin_inset Formula $\Phi:G\rightarrow\mathbb{Z}_{n}$
+\end_inset
+
+ׂ, 
+\begin_inset Formula $\Phi(g^{i})=i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נבדוק את האיזומורפיזם:
+\end_layout
+
+\begin_layout Proof
+שימור הפעולה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $\Phi(g^{i}\cdot g^{j})=\Phi(g^{i+j})=i+j=\Phi(g^{i})+\Phi(g^{j})$
+\end_inset
+
+ מחיבור חזקות והגדרת האיזומורפיזם.
+ 
+\end_layout
+
+\begin_layout Proof
+השאלה היא מה קורה כאשר 
+\begin_inset Formula $i+j=n+a$
+\end_inset
+
+ )
+\begin_inset Formula $a<n$
+\end_inset
+
+( כלומר כאשר הם גדולים מ-
+\begin_inset Formula $n$
+\end_inset
+
+.
+ נבדוק: 
+\begin_inset Formula $g^{i+j}=g^{n+a}=g^{n}\cdot g^{a}=g^{a}$
+\end_inset
+
+.
+ אותו דבר ניתן להראות על 
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+לכן 
+\begin_inset Formula $\Phi(g^{i}g^{j})=\Phi(g^{a})=a=i+j=\Phi(g^{i})\Phi(g^{j})$
+\end_inset
+
+ - וכאן באה תכונת הציקליות של החבורה לידי ביטוי.
+\end_layout
+
+\begin_layout Example*
+יפה לראות כי למשל ל-
+\begin_inset Formula $Z_{12}$
+\end_inset
+
+ יש כמה יוצרים.
+ למשל: 
+\begin_inset Formula $<1>=Z_{12}$
+\end_inset
+
+ אך גם 
+\begin_inset Formula $Z_{12}=<5>=\{0,5,10,3,8,1,6,11,4,9,2,7\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Corollary*
+זה מוביל אותנו למסקנה מעניינת: היוצרים של 
+\begin_inset Formula $Z_{12}$
+\end_inset
+
+ הם האיברים ב-
+\begin_inset Formula $Z_{12}$
+\end_inset
+
+ שזרים ל-
+\numeric on
+12
+\numeric off
+, כלומר 
+\begin_inset Formula $\{1,5,7,11\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem*
+\begin_inset Formula $a\in\mathbb{Z}_{n}$
+\end_inset
+
+ הוא יוצר 
+\begin_inset Formula $\iff$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $(a,n)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+יהי 
+\begin_inset Formula $a$
+\end_inset
+
+ יוצר של 
+\begin_inset Formula $Z_{12}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $o(a)=12$
+\end_inset
+
+ כלומר, ה-
+\begin_inset Formula $k$
+\end_inset
+
+ המינמלי כך ש- 
+\begin_inset Formula $k\cdot a=0$
+\end_inset
+
+.
+ זה למעשה שקול ללהגיד 
+\begin_inset Formula $ka=e\cdot12$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $ka$
+\end_inset
+
+ הוא כפול של 
+\begin_inset Formula $a$
+\end_inset
+
+ וגם כפולה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+12
+\numeric off
+.
+ ומכיוון ש-
+\begin_inset Formula $k=o(a)$
+\end_inset
+
+ )המינימלי( אזי 
+\begin_inset Formula $ka=lcm(a,n)=[a,n]$
+\end_inset
+
+.
+ ולכן 
+\begin_inset Formula $[a,12]=12a$
+\end_inset
+
+.
+ ניזכר כי המכפלה המשותפת הכי קטנה מקיימת: 
+\begin_inset Formula $[a,n]=\frac{a\cdot n}{gcd(a,n)}$
+\end_inset
+
+.
+ אם נציב, נקבל מהמשוואה כי 
+\begin_inset Formula $gcd(a,n)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+ב-
+\begin_inset Formula $Z_{10}$
+\end_inset
+
+.
+ מתקיים: 
+\begin_inset Formula $o(1)=10,o(2)=5,o(3)=10,o(4)=5,o(5)=2,o(6)=5,o(7)=10,o(8)=5,o(9)=10$
+\end_inset
+
+.
+ ננסה לחלץ מכך נוסחה לסדר, ונראה כי כולם מתחלקים ב-
+\begin_inset Formula $10$
+\end_inset
+
+.
+ לכן נוסחה שניתן לקבל היא 
+\begin_inset Formula $o(i)=\frac{n}{(n,i)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+קוסטים או מחלקות
+\end_layout
+
+\begin_layout Definition*
+תהא 
+\begin_inset Formula $H<G$
+\end_inset
+
+ וכן יהא 
+\begin_inset Formula $x\in G$
+\end_inset
+
+.
+ מסמנים: 
+\begin_inset Formula $H\cdot x=\{h\cdot x|h\in H\}$
+\end_inset
+
+ וזה נקרא קוסט ימני.
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem*
+מתקיים:
+\end_layout
+
+\begin_layout Theorem*
+א.
+ הגודל של קוסט: 
+\begin_inset Formula $|Hx|=|H|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem*
+ב.
+ כל שני קוסטים הם או שווים או זרים )כלומר החיתוך הוא הקבוצה הריקה(.
+\end_layout
+
+\begin_layout Theorem*
+ג.
+ איחוד כל הקוסטים הוא 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+הסיבה לקיום ג.
+ היא שלכל 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\in H\cdot x$
+\end_inset
+
+ משום ש- 
+\begin_inset Formula $x=ex\in Hx$
+\end_inset
+
+ שכן 
+\begin_inset Formula $H$
+\end_inset
+
+ תת חבורה וקיים בה האדיש 
+\begin_inset Formula $e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+הוכחת משפט לגראנז'
+\end_layout
+
+\begin_layout Proof
+מהמשפט הקודם מתקיים כי הקוסטים הם למעשה חלוקה של 
+\begin_inset Formula $G$
+\end_inset
+
+, כלומר אם יש לנו 
+\begin_inset Formula $k$
+\end_inset
+
+ קוסטים שונים, אז יתקיים 
+\begin_inset Formula $|G|=k\cdot|H|$
+\end_inset
+
+ .
+\end_layout
+
+\end_deeper
+\begin_layout Definition*
+נרצה להוכיח את סעיף ב' של המשפט עליו ההוכחה מתבססת.
+\end_layout
+
+\begin_layout Proof
+צריך להוכיח שאם שני קוסטים 
+\begin_inset Formula $Hx,Hy$
+\end_inset
+
+ אינם זרים, הם זהים.
+ אי זרות פירושה כי קיים 
+\begin_inset Formula $z\in Hx\cap Hy$
+\end_inset
+
+.
+ ולכן: 
+\begin_inset Formula $\exists h_{1}\in H:z=h_{1}x$
+\end_inset
+
+ וכן 
+\begin_inset Formula $\exists h_{2}\in H:z=h_{2}y$
+\end_inset
+
+.
+ כך ש- 
+\begin_inset Formula $h_{1}x=h_{2}y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $h_{2}^{-1}h_{1}=yx^{-1}$
+\end_inset
+
+.
+ נסמן: 
+\begin_inset Formula $h=h_{2}^{-1}h_{1}\in H$
+\end_inset
+
+ )השייכות מתקיימת מכך ש-
+\begin_inset Formula $H$
+\end_inset
+
+ חבורה בפני עצמה ולכן יש סגירות לפעולה(.
+\end_layout
+
+\begin_layout Proof
+נרצה להראות כי 
+\begin_inset Formula $Hx=Hy$
+\end_inset
+
+.
+ שוויון קבוצות מראים בהכלה דו-כיוונית.
+\end_layout
+
+\begin_layout Proof
+כיוון ראשון: 
+\begin_inset Formula $Hy\subseteq Hx$
+\end_inset
+
+.
+ יהא 
+\begin_inset Formula $u\in Hy$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $u=h_{3}y$
+\end_inset
+
+ עבור 
+\begin_inset Formula $h_{3}\in H$
+\end_inset
+
+.
+ וממה שהראנו קודם, מתקיים 
+\begin_inset Formula $u=h_{3}hx$
+\end_inset
+
+ ולכן עבור 
+\begin_inset Formula $h'=h_{3}h$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $u\in Hx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+כיוון שני: הכיוון הזה הוא סימטרי לכיוון הקודם כי ההבדל בין 
+\begin_inset Formula $y$
+\end_inset
+
+ ל-
+\begin_inset Formula $x$
+\end_inset
+
+ סמנטי לחלוטין.
+\end_layout
+
+\begin_layout Standard
+הקדמה - הגדרת חבורת הקוסטים: 
+\begin_inset Formula $Hx\cdot Hy=H(x\cdot y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+תנאים שקולים לכך שקוסטים שווים:
+\end_layout
+
+\begin_layout Theorem*
+א.
+ 
+\begin_inset Formula $Hx=Hy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+ב.
+ 
+\begin_inset Formula $y\cdot x^{-1}\in H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+ג.
+ 
+\begin_inset Formula $x\cdot y^{-1}\in H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+ד.
+ ׁ
+\begin_inset Formula $x\in Hy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+ה.
+ 
+\begin_inset Formula $y\in Hx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+תנאים שקולים זה אם ורק אם בין כל אחד מהם.
+ למשל הוכחת ד' גורר א': 
+\begin_inset Formula $x\in Hy$
+\end_inset
+
+, וכן ידוע כי 
+\begin_inset Formula $x\in Hx$
+\end_inset
+
+ ואז 
+\begin_inset Formula $Hx\cap Hy=\emptyset$
+\end_inset
+
+ ולכן לפי המשפט הקודם 
+\begin_inset Formula $Hx=Hy$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
