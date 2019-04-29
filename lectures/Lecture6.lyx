@@ -1,0 +1,1207 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+fixltx2e
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package auto
+\inputencoding iso8859-8
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "default"
+\font_typewriter "default" "Miriam"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+הרצאה
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Section
+חבורות ציקליות - סיום
+\end_layout
+
+\begin_layout Standard
+נזכיר כי הגדרנו את החבורה הציקלית להיות חבורה 
+\begin_inset Formula $G=\{e,g,g^{2},\ldots,g^{n-1}\}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $g^{n}=e$
+\end_inset
+
+ ואנו אומרים ש-
+\begin_inset Formula $g$
+\end_inset
+
+ הוא היוצר של 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+תת חבורה של חבורה ציקלית, היא ציקלית.
+\end_layout
+
+\begin_layout Remark
+לדוגמה, למדנו כי אם 
+\begin_inset Formula $H<\mathbb{Z}$
+\end_inset
+
+, כלומר תת חבורה של השלמים, אז היא מהצורה 
+\begin_inset Formula $k\mathbb{Z}$
+\end_inset
+
+, כלומר עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $k=5$
+\end_inset
+
+ נקבל כי 
+\begin_inset Formula $H=\{\ldots,-5,0,5,10,15,\ldots\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ניתן להניח כי 
+\begin_inset Formula $G=\mathbb{Z}_{n}$
+\end_inset
+
+ )כי ראינו שכל חבורה ציקלית היא איזומורפית ל-
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+, ולכן הן למעשה אותו דבר וההוכחה שקולה(.
+ 
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $H<\mathbb{Z}_{n}$
+\end_inset
+
+.
+ יהא 
+\begin_inset Formula $k$
+\end_inset
+
+ האיבר המינימאלי ב-
+\begin_inset Formula $H$
+\end_inset
+
+ ששונה מ-
+\begin_inset Formula $0$
+\end_inset
+
+ .
+ נראה ש-
+\begin_inset Formula $k$
+\end_inset
+
+ יוצר של 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ברור שמתקיים: 
+\begin_inset Formula $0,k,k+k,k+k+k,\ldots$
+\end_inset
+
+ כולם בתוך 
+\begin_inset Formula $H$
+\end_inset
+
+, שכן היא תת חבורה ולכן סגורה לפעולה )חיבור במקרה שלנו כי אנחנו תת חבורה
+ של 
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+(.
+\begin_inset Newline newline
+\end_inset
+
+אם נראה שכל איבר 
+\begin_inset Formula $h\in H$
+\end_inset
+
+ הוא מהצורה 
+\begin_inset Formula $m\cdot k$
+\end_inset
+
+, פירושו שכל איבר 
+\begin_inset Formula $h$
+\end_inset
+
+ נוצר על ידי 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נרשום: 
+\begin_inset Formula $h=m\cdot k+r$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $r<k$
+\end_inset
+
+.
+ נרצה להראות שהשארית 
+\begin_inset Formula $r$
+\end_inset
+
+ שווה ל-
+\begin_inset Formula $0$
+\end_inset
+
+.
+ נניח בשלילה כי 
+\begin_inset Formula $r>0$
+\end_inset
+
+.
+ אזי מתקיים 
+\begin_inset Formula $r=h-m\cdot k$
+\end_inset
+
+, ולכן מסגירות לפעולה 
+\begin_inset Formula $r\in H$
+\end_inset
+
+.
+ אך זו סתירה לכך ש-
+\begin_inset Formula $k$
+\end_inset
+
+ היה מינימאלי, שונה מ-
+\begin_inset Formula $0$
+\end_inset
+
+ ב-
+\begin_inset Formula $H$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $r=0$
+\end_inset
+
+ ו
+\begin_inset Formula $k$
+\end_inset
+
+ הוא באמת יוצר כנדרש.
+\end_layout
+
+\begin_layout Remark
+החבורה 
+\begin_inset Formula $\mathbb{Z}_{2}\oplus\mathbb{Z}_{3}$
+\end_inset
+
+ציקלית.
+\end_layout
+
+\begin_layout Proof
+נראה שהאיבר 
+\begin_inset Formula $(1,1)$
+\end_inset
+
+ יוצר.
+ קל להראות זאת על ידי מעבר על כל האיברים ב-
+\begin_inset Formula $\mathbb{Z}_{2}\oplus\mathbb{Z}_{3}$
+\end_inset
+
+ )זה אפשרי כי החבורה קטנה יחסית( ולהראות כי קיים 
+\begin_inset Formula $k$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $(1,1)^{k}$
+\end_inset
+
+ שווה להם:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(1,1),(1,1)+(1,1)=(0,2),3\cdot(1,1)=(1,0),4\cdot(1,1)=(0,1),5\cdot(1,1)=(1,2)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\mathbb{Z}_{a}\oplus\mathbb{Z}_{b}\cong\mathbb{Z}_{ab}$
+\end_inset
+
+ אם 
+\begin_inset Formula $(a,b)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ניקח כיוצר את 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+ ונראה כי הסדר שלו הוא 
+\begin_inset Formula $n=a\cdot b$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נניח בשלילה כי 
+\begin_inset Formula $s=o\left(1,1\right)<n$
+\end_inset
+
+.
+ מתקיים: 
+\begin_inset Formula $\left(s,s\right)=s\cdot\left(1,1\right)=(0,0)$
+\end_inset
+
+ משום ש-
+\begin_inset Formula $\left(s\cdot mod(a),s\cdot mod(b)\right)=\left(0,0\right)$
+\end_inset
+
+, שפירושו 
+\begin_inset Formula $a|s$
+\end_inset
+
+ וכן 
+\begin_inset Formula $b|s$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $s$
+\end_inset
+
+ הוא כפולה של 
+\begin_inset Formula $a,b$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $s\ge\left[a,b\right]=ab$
+\end_inset
+
+, וזו סתירה להנחה ש-
+\begin_inset Formula $s<n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+חבורות לא אבליות 
+\backslash
+ קומטטיביות
+\end_layout
+
+\begin_layout Standard
+דוגמה ראשונה לחבורה שכזו היא חבורת התמורות של 
+\begin_inset Formula $n$
+\end_inset
+
+ איברים.
+\end_layout
+
+\begin_layout Standard
+באלגברה לינארית, למדנו כי מטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+ היא למעשה טרנספורמציה במסווה.
+ כלומר היא מגדירה 
+\begin_inset Formula $T:\mathbb{R}^{n}\rightarrow\mathbb{R}^{m}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $T\overline{x}=A\overline{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במובן של מכפלת מטריצות, אם יש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מטריצות 
+\begin_inset Formula $A,B$
+\end_inset
+
+ שמגדירות טרנספורמציות 
+\begin_inset Formula $S,T$
+\end_inset
+
+, אזי מכפלת המטריצות היא הרכבת הטרנספורמציות: 
+\begin_inset Formula $S(T(\overline{x}))=(B\cdot A)\overline{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לא בהכרח שההרכבה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הטרנספורמציות תצא אותו דבר, דהיינו המכפלה של המטריצות , או ההרכבה של הטרנספורמצי
+ות )ושל פונקציות בכללי( היא אינה קומטטיבית.
+\end_layout
+
+\begin_layout Subsection
+חבורת התמורות עם פעולת ההרכבה
+\end_layout
+
+\begin_layout Definition
+נסמן 
+\begin_inset Formula $\left[n\right]=\left\{ 1,2,\ldots n\right\} $
+\end_inset
+
+.
+ לשתי פונקציות: 
+\begin_inset Formula $f,g:\left[n\right]\rightarrow\left[n\right]$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $f\circ g:\left[n\right]\rightarrow\left[n\right]$
+\end_inset
+
+ להיות 
+\begin_inset Formula $f\circ g(k)=f(g(k))$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+נסמן: 
+\begin_inset Formula $I$
+\end_inset
+
+ - פונקצית הזהות.
+ כלומר 
+\begin_inset Formula $I(k)=k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+לכן יתקיים 
+\begin_inset Formula $f\circ I=I\circ f=f$
+\end_inset
+
+.
+ זה למעשה יהיה האיבר האדיש שלנו בחבורה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+פונקציה 
+\begin_inset Formula $f:\left[n\right]\rightarrow\left[n\right]$
+\end_inset
+
+ נקראת תמורה, אם 
+\begin_inset Formula $f$
+\end_inset
+
+ חח
+\begin_inset Quotes erd
+\end_inset
+
+ע ועל.
+\end_layout
+
+\begin_layout Definition
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ תמורה אז קיימת ההופכית שלה 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+המוגדרת על ידי: 
+\begin_inset Formula $f^{-1}=\left\{ (j,i):(i,j)\in f\right\} $
+\end_inset
+
+ )בכתיב יחסים(.
+ או אם 
+\begin_inset Formula $f(i)=j$
+\end_inset
+
+ אז 
+\begin_inset Formula $f^{-1}(j)=i$
+\end_inset
+
+.
+ מתכונה זו יתקיים 
+\begin_inset Formula $f(f^{-1}(i))=i$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f\circ f^{-1}=I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב שמכל ההגדרות האלה למעשה הרכבנו חבורה ביחס לפעולת ההרכבה של התמורות.
+\end_layout
+
+\begin_layout Definition
+חבורת התמורות על 
+\begin_inset Formula $n$
+\end_inset
+
+ איברים )
+\begin_inset Formula $\left[n\right]$
+\end_inset
+
+( נקראת החבורה הסימטרית על 
+\begin_inset Formula $\left[n\right]$
+\end_inset
+
+ ומסומנת ב: 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+ החבורה הסימטרית היא קבוצה המכילה אך ורק את 
+\begin_inset Formula $I$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $|S_{1}|=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עבור 
+\begin_inset Formula $n=2$
+\end_inset
+
+ יש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תמורות שטובות ל-
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $|S_{2}|=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+נסמן סימון זמני )ופרמטיבי( לתמורות בעזרת: 
+\begin_inset Formula 
+\[
+\left(\xymatrix{1 & 2 & \cdots & n\\
+\alpha(1) & \alpha(2) & \cdots & \alpha(n)
+}
+\right)
+\]
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+ב-
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ יהיו לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מטריצות כאלה ולכן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תמורות שונות.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+הסימון המעגלי לתמורות.
+ מהתכונה שהרכבת 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ שוב ושוב נחזור בחזרה למקור )כלומר ניצור מעין מעגל( ניתן לסמן את התמורה
+ באופן הבא: 
+\begin_inset Formula $S_{6}=\left(1,2,4,6\right)\cdot\left(3,5\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\alpha(1)=2,\alpha(2)=4,\alpha(4)=6,\alpha(6)=1$
+\end_inset
+
+.
+ באופן דומה 
+\begin_inset Formula $\alpha(3)=5,\alpha(5)=3$
+\end_inset
+
+.
+ כל האיברים שלא מופיעים בכל המעגלים הם למעשה 
+\begin_inset Quotes eld
+\end_inset
+
+מעגל משל עצמם
+\begin_inset Quotes erd
+\end_inset
+
+ או 
+\begin_inset Quotes eld
+\end_inset
+
+נשארים במקומם
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+מעניין לראות כי הכפל בסימון בין הוקטורים הוא באמת כפל תמורות.
+ בנוסף, הכפל הוא אינו קומטטיבי כמובן מאליו, רק במקרים מסויימים:
+\end_layout
+
+\begin_layout Example*
+עבור 
+\begin_inset Formula $\alpha\in S_{3}:(1,2)$
+\end_inset
+
+ ועבור 
+\begin_inset Formula $\beta\in S_{3}:(1,3)$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $\alpha\beta\ne\beta\alpha$
+\end_inset
+
+.
+ מעניין לראות כי אם ניקח 
+\begin_inset Formula $\alpha\in S_{4}:(1,2)$
+\end_inset
+
+ ואת 
+\begin_inset Formula $\beta\in S_{4}:(3,4)$
+\end_inset
+
+ נקבל כי 
+\begin_inset Formula $\alpha\beta=\beta\alpha$
+\end_inset
+
+ כלומר המכפלה כן קומטטיבית.
+ זה נובע מהעובדה כי המעגלים 
+\begin_inset Quotes eld
+\end_inset
+
+זרים
+\begin_inset Quotes erd
+\end_inset
+
+.
+ עוד מקרה מעניין בו הכפל קומטטיבי: 
+\begin_inset Formula $\alpha=(1,2,3)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(1,2,3\right)\left(1,2,3\right)=\left(1,3,2\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+נזכיר את המונח צמוד או הצמדה.
+ נאמר ש-
+\begin_inset Formula $\alpha$
+\end_inset
+
+ צמודה לתמורה 
+\begin_inset Formula $\beta$
+\end_inset
+
+ אם 
+\begin_inset Formula $\alpha\beta\alpha^{-1}=\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim*
+אם מתקיים 
+\begin_inset Formula $\beta(i)=j$
+\end_inset
+
+ אז 
+\begin_inset Formula $\alpha\beta(i)=\alpha(j)$
+\end_inset
+
+ או 
+\begin_inset Formula $\alpha\beta\alpha^{-1}(\alpha(i))=\alpha(j)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim*
+אם 
+\begin_inset Formula $\beta=(1,2)(3,4,5)(6,7)$
+\end_inset
+
+.
+ אז הצמדה שלה לתמורה 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מקיימת: 
+\begin_inset Formula $\alpha\beta\alpha^{-1}=(\alpha(1),\alpha(2))\cdot(\alpha(3),\alpha(4),\alpha(5))\cdot(\alpha(6),\alpha(7))$
+\end_inset
+
+.
+ כלומר בכתיבה מעגלית 
+\begin_inset Formula $\alpha\beta\alpha^{-1}$
+\end_inset
+
+ מתקבל מ-
+\begin_inset Formula $\beta$
+\end_inset
+
+ על ידי החלפת כל 
+\begin_inset Formula $i$
+\end_inset
+
+ ב-
+\begin_inset Formula $\alpha(i)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+סדר של תמורות
+\end_layout
+
+\begin_layout Standard
+מהו הסדר של 
+\begin_inset Formula $\beta=(1,2,3,4,5)$
+\end_inset
+
+? ניתן לראות מחישוב קצר כי 
+\begin_inset Formula $\beta^{5}(i)=i$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i\in\beta$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\beta^{5}=I$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $o(\beta)=5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה נוספת: 
+\begin_inset Formula $\beta=(1,2)(3,4,5)$
+\end_inset
+
+.
+ מתקיים: 
+\begin_inset Formula $\beta^{2}=(1,2)(3,4,5)(1,2)(3,4,5)=(1,2)(1,2)(3,4,5)(3,4,5)=(1,2)^{2}(3,4,5)^{2}$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $(1,2)^{2}=I$
+\end_inset
+
+ אך 
+\begin_inset Formula $(3,4,5)^{2}\ne I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מהדוגמה לעיל ניתן לראות כי במקרה כזה הסדר יהיה ה-
+\begin_inset Formula $gcd(i,j)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim
+אם 
+\begin_inset Formula $\beta=(c_{1})(c_{2})\ldots(c_{t)}$
+\end_inset
+
+ מכפלה של 
+\begin_inset Formula $t$
+\end_inset
+
+ מעגלים זרים.
+ אזי 
+\begin_inset Formula $o(\beta)=l.c.m(|c_{1}|,|c_{2}|,\ldots,|c_{t}|)$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
