@@ -1,0 +1,1290 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package auto
+\inputencoding iso8859-8
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "default"
+\font_typewriter "default" "Miriam"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+הרצאה
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Author
+איתי ווייסמן
+\end_layout
+
+\begin_layout Section
+תזכורת
+\end_layout
+
+\begin_layout Standard
+למדנו לאחרונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נושאים: חבורות מנה והומומורפיזם.
+ אמרנו כי למעשה, הם מייצגים את אותו הדבר.
+\end_layout
+
+\begin_layout Standard
+ניזכר בהגדרת הומומורפיזם:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\Phi:G\rightarrow H$
+\end_inset
+
+ נקראת הומומורפיזם אם 
+\begin_inset Formula $\Phi\left(xy\right)=\Phi\left(x\right)\Phi\left(y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+עבור 
+\begin_inset Formula $G=S_{n}$
+\end_inset
+
+ וכן 
+\begin_inset Formula $H=\left(\mathbb{Z}_{2},+\right)$
+\end_inset
+
+.
+ נגדיר:
+\begin_inset Formula 
+\[
+\Phi\left(\pi\right)=\begin{cases}
+0 & \exists n\in\mathbb{Z}:\pi=2n\\
+1 & \exists n\in\mathbb{Z}:\pi=2n+1
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+יהיו 
+\begin_inset Formula $\alpha,\beta\in S_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha\beta$
+\end_inset
+
+ זוגיים אם 
+\begin_inset Formula $\alpha,\beta\in A_{n}$
+\end_inset
+
+ או 
+\begin_inset Formula $\alpha,\beta\notin A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ניזכר בהגדרת גרעין:
+\end_layout
+
+\begin_layout Definition
+נגדיר את הגרעין להיות:
+\begin_inset Formula 
+\[
+Ker\phi=\left\{ g\in G:\phi\left(g\right)=e_{H}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $Ker\phi\triangleleft G$
+\end_inset
+
+.
+ כלומר הגרעין הוא תת חבורה נורמלית של 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נוכיח ראשית כי 
+\begin_inset Formula $Ker\phi$
+\end_inset
+
+ היא חבורה:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+סגירות לכפל - יהיו 
+\begin_inset Formula $g_{1},g_{2}\in Ket\phi$
+\end_inset
+
+ נרצה להראות כי 
+\begin_inset Formula $\phi\left(g_{1}g_{2}\right)=e_{H}$
+\end_inset
+
+.
+ מתקיים: 
+\begin_inset Formula $\phi\left(g_{1}g_{2}\right)=\phi\left(g_{1}\right)\phi\left(g_{2}\right)=e_{H}e_{H}=e_{H}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+סגירות להיפוך - יהא 
+\begin_inset Formula $g\in Ker\phi$
+\end_inset
+
+.
+ נרצה להראות כי 
+\begin_inset Formula $g^{-1}\in Ker\phi$
+\end_inset
+
+.
+ מתקיים: 
+\begin_inset Formula $\phi\left(g^{-1}\right)=\left(\phi\left(g\right)\right)^{-1}=\left(e_{H}\right)^{-1}=e_{H}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $g^{-1}\in Ker\phi$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Definition
+הגדרת 
+\begin_inset Formula $K\triangleleft G$
+\end_inset
+
+: אם לכל 
+\begin_inset Formula $g\in K$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $Kg=gK$
+\end_inset
+
+.
+ כלומר: כל איבר ב
+\begin_inset Formula $Kg$
+\end_inset
+
+ שייך ל-
+\begin_inset Formula $gK$
+\end_inset
+
+ ולהיפך.
+ כלומר כל 
+\begin_inset Formula $k\in K$
+\end_inset
+
+ מקיימם 
+\begin_inset Formula $kg\in gK$
+\end_inset
+
+, כלומר קיים 
+\begin_inset Formula $k'\in K$
+\end_inset
+
+ כלשהו כך ש- 
+\begin_inset Formula $kg=gk'$
+\end_inset
+
+.
+ כלומר בהצמדה 
+\begin_inset Formula $g^{-1}kg\in K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+לסיכום: 
+\begin_inset Formula $K\triangleleft G$
+\end_inset
+
+ אם 
+\begin_inset Formula $g^{-1}Kg=K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+כעת נוכיח כי 
+\begin_inset Formula $Ker\phi$
+\end_inset
+
+ היא תת חבורה נורמלית של 
+\begin_inset Formula $G$
+\end_inset
+
+ בהתבסס על ההגדרה לעיל:
+\end_layout
+
+\begin_layout Proof
+נרצה להוכיח כי אם 
+\begin_inset Formula $k\in Ker\phi$
+\end_inset
+
+ וכן 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ אזי 
+\begin_inset Formula $g^{-1}kg\in Ker\phi$
+\end_inset
+
+ כלומר: 
+\begin_inset Formula $g^{-1}kg=e_{H}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+מתקיים:
+\begin_inset Formula 
+\begin{align*}
+\phi\left(g^{-1}kg\right) & =\phi\left(g^{-1}\right)\phi\left(k\right)\phi\left(g\right)=\phi\left(g^{-1}\right)e_{H}\phi\left(g\right)\\
+ & =\phi\left(g^{-1}\right)\phi\left(g\right)=\phi\left(g^{-1}g\right)=\phi\left(e_{H}\right)=e_{H}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+הקשר בין הגרעין להומומורפיזם
+\end_layout
+
+\begin_layout Standard
+יהי הומומורפיזם 
+\begin_inset Formula $\Phi:G\rightarrow H$
+\end_inset
+
+ וכן נסמן 
+\begin_inset Formula $K=Ker\phi\triangleleft G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+לכל 
+\begin_inset Formula $x,y\in G$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $Kx=Ky\iff\Phi\left(x\right)=\Phi\left(y\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Lemma
+)במילים: כל קוסט נשלח לאותו איבר, 
+\begin_inset Formula $Kx$
+\end_inset
+
+ נשלח ל-
+\begin_inset Formula $\Phi\left(x\right)$
+\end_inset
+
+.(
+\end_layout
+
+\begin_layout Proof
+ניזכר כי 
+\begin_inset Formula $Kx=Ky$
+\end_inset
+
+ אם ורק אם 
+\begin_inset Formula $x\in Ky$
+\end_inset
+
+ אם ורק אם 
+\begin_inset Formula $y\in Kx$
+\end_inset
+
+ אם ורק אם 
+\begin_inset Formula $yx^{-1}\in K$
+\end_inset
+
+ אם ורק אם 
+\begin_inset Formula $xy^{-1}\in K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+לכן מתקיים 
+\begin_inset Formula $Kx=Ky$
+\end_inset
+
+ אם ורק אם 
+\begin_inset Formula $xy^{-1}\in K$
+\end_inset
+
+ אם ורק אם 
+\begin_inset Formula $\phi\left(x\right)\phi\left(y^{-1}\right)=\phi\left(xy^{-1}\right)=e_{H}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\phi\left(x\right)=\phi\left(y\right)$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Standard
+נגדיר את התמונה של ההומומורפיזם:
+\end_layout
+
+\begin_layout Definition
+התמונה של הומומורפיזם 
+\begin_inset Formula $\phi$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+Im\phi=\left\{ h\in H:\exists x\in G:h=\phi\left(x\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+משפט האיזומורפיזם - ההעתקה 
+\begin_inset Formula $\tilde{\Phi}:G/K\rightarrow H$
+\end_inset
+
+ המוגדרת על ידי 
+\begin_inset Formula $\tilde{\phi}\left(Kx\right)=\phi\left(x\right)$
+\end_inset
+
+, היא הומומורפיזם חד חד ערכי.
+\end_layout
+
+\begin_layout Theorem
+)במילים: מעתיקים כל קוסט לתמונה של כל איבריו(
+\end_layout
+
+\begin_layout Standard
+נשים לב שההגדרה אינה תלויה בבחירת הנציג 
+\begin_inset Formula $x$
+\end_inset
+
+, שכן אם 
+\begin_inset Formula $Kx=Ky$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\phi\left(x\right)=\phi\left(y\right)$
+\end_inset
+
+ )זוהי הלמה שהוכחנו(.
+ ולכן ההגדרה טובה.
+\end_layout
+
+\begin_layout Proof
+נרצה להוכיח כי מתקיים: 
+\begin_inset Formula $\tilde{\phi}\left(Kx\cdot Ky\right)=\tilde{\phi}\left(Kx\right)\tilde{\phi\left(Ky\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+מתקיים:
+\begin_inset Formula 
+\[
+\tilde{\phi}\left(Kx\cdot Ky\right)=\tilde{\phi}\left(Kxy\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ומכאן אם נראה כי 
+\begin_inset Formula $\phi\left(xy\right)=\phi\left(x\right)\phi\left(y\right)$
+\end_inset
+
+ אזי נראה כי 
+\begin_inset Formula $\tilde{\phi}$
+\end_inset
+
+ היא הומומורפיזם.
+ זה נכון משום שידוע לנו ש-
+\begin_inset Formula $\phi$
+\end_inset
+
+ היא הומומורפיזם בעצמה, ולכן הטענה נכונה.
+\end_layout
+
+\begin_layout Proof
+נראה כי 
+\begin_inset Formula $\tilde{\phi}$
+\end_inset
+
+ היא חח
+\begin_inset Quotes erd
+\end_inset
+
+ע, כלומר אם 
+\begin_inset Formula $\tilde{\phi}\left(x\right)=\tilde{\phi}\left(y\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $Kx=Ky$
+\end_inset
+
+.
+ כלומר, אם 
+\begin_inset Formula $\phi\left(x\right)=\phi\left(y\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $Kx=Ky$
+\end_inset
+
+, וזוהי הלמה שלנו.
+\end_layout
+
+\begin_layout Theorem
+משפט האיזומורפיזם הקצר: 
+\begin_inset Formula $G/Ker\phi\cong Im\phi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+נציג מספר דוגמאות:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $\phi:S_{n}\rightarrow\mathbb{Z}_{2}$
+\end_inset
+
+ שהצגנו קודם.
+ מתקיים 
+\begin_inset Formula $Ker\phi=A_{n}$
+\end_inset
+
+.
+ ולכן 
+\begin_inset Formula $S_{n}/A_{n}\cong\mathbb{Z}_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $\phi:Z\rightarrow Z_{10}$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\phi\left(n\right)=n\left(mod10\right)$
+\end_inset
+
+.
+ מתקיים: 
+\begin_inset Formula $Ker\phi=10Z$
+\end_inset
+
+ ולפי המשפט: 
+\begin_inset Formula $Z/10Z=Z_{10}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $\phi:\left(R^{*},\cdot\right)\rightarrow\left(R^{*},\cdot\right)$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\phi\left(x\right)=\begin{cases}
+1 & x>0\\
+-1 & x<0
+\end{cases}$
+\end_inset
+
+.
+ זהו הומומורפים )ניתן להראות(.
+ מתקיים כי 
+\begin_inset Formula $Ker\phi=R^{+}$
+\end_inset
+
+.
+ ולפי המשפט: 
+\begin_inset Formula $R^{*}/R^{+}\cong\left(\left\{ 1,-1\right\} ,\cdot\right)\cong\mathbb{Z}_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $\left(\mathbb{Z},+\right)<\left(\mathbb{R},+\right)$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+נשים לב כי למשל עבור 
+\begin_inset Formula $1.8$
+\end_inset
+
+ מתקיים כי הקוסטים 
+\begin_inset Formula $\mathbb{Z}+1.8$
+\end_inset
+
+ ו-
+\begin_inset Formula $\mathbb{Z}+2.8$
+\end_inset
+
+.
+ זה נכון משום ש-
+\begin_inset Formula $2.8-1.8=1\in\left(\mathbb{Z},+\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נרצה למצוא בעזרת משפט האיזומורפיזם מיהו 
+\begin_inset Formula $\left(\mathbb{R},+\right)/\left(\mathbb{Z},+\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נחפש הומומורפיזם 
+\begin_inset Formula $\phi:\left(\mathbb{R},+\right)\rightarrow H$
+\end_inset
+
+ כך ש
+\begin_inset Formula $Ker\phi=\left(\mathbb{Z},+\right)$
+\end_inset
+
+ .
+ נגדיר: 
+\begin_inset Formula $H=\left(\mathbb{C^{*}},\cdot\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\phi\left(x\right)=e^{2\pi ix}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+טענה: 
+\begin_inset Formula $\phi$
+\end_inset
+
+ הומומורפיזם.
+ נראה על פי ההגדרה: 
+\begin_inset Formula 
+\[
+\phi\left(x+y\right)=e^{2\pi i\left(x+y\right)}=e^{2\pi ix}e^{2\pi iy}=\phi\left(x\right)\phi\left(y\right)
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+הגרעין הוא: 
+\begin_inset Formula $Ker\phi=\left\{ x:e^{2\pi ix}=1\right\} $
+\end_inset
+
+.
+ זאת אומרת שכדי שמס' אויילר הזה יהיה שווה ל-
+\numeric on
+1
+\numeric off
+, נרצה כפולות של 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ על מנת להגיע ל-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על הציר הממשי ב-
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+.
+ ולכן בהכרח 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לפי משפט האיזומורפיזם: 
+\begin_inset Formula $\left(R,+\right)/\left(Z,+\right)\cong Im\phi$
+\end_inset
+
+.
+ מהו 
+\begin_inset Formula $Im\phi$
+\end_inset
+
+? אם ניזכר באיך מכפילים מספרים מרוכבים )כפל הרדיוסים וחיבור הזוויות, אך
+ הרדיוס תמיד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+(, נשים לב שנקבל את מעגל היחידה ב-
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Remark
+התמונה של הומומורפיזם 
+\begin_inset Formula $Im\phi$
+\end_inset
+
+ היא חבורה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+חוגים ושדות
+\end_layout
+
+\begin_layout Example
+ניקח לדוגמה את החוג 
+\begin_inset Formula $\left(\mathbb{Z},+,\cdot\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+
+\series bold
+חוג
+\series default
+, הוא קבוצה 
+\begin_inset Formula $R$
+\end_inset
+
+ עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעולות: 
+\begin_inset Formula $+,\cdot$
+\end_inset
+
+ המקיימות את התכונות הבאות:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(R,+\right)$
+\end_inset
+
+ היא חבורה, לאדיש קוראים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+הכפל הוא אסוציאטיבי - 
+\begin_inset Formula $\left(ab\right)c=a\left(bc\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+יש אדיש לכפל, שיסומן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+הכפל קומוטטיבי - 
+\begin_inset Formula $ab=bc$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+הכפל דיסטריביוטיבי ביחס לחיבור )פילוג( - 
+\begin_inset Formula $x\left(y+z\right)=xy+xz$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Definition
+אם מתקיים 
+\begin_inset Formula $R^{*}=R\backslash\left\{ 0\right\} $
+\end_inset
+
+ הוא חבורה ביחס לפעולת הכפל, נקרא ל-
+\begin_inset Formula $R$
+\end_inset
+
+ 
+\series bold
+שדה
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+נביא מספר דוגמאות:
+\end_layout
+
+\begin_layout Enumerate
+השלמים - חוג אך לא שדה
+\end_layout
+
+\begin_layout Enumerate
+הממשיים והקומפלקסים - שדה
+\end_layout
+
+\begin_layout Enumerate
+הרציונליים - שדה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{Z_{n}}$
+\end_inset
+
+- חוג, ואם 
+\begin_inset Formula $n$
+\end_inset
+
+ ראשוני אז זה שדה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R\left[x\right]$
+\end_inset
+
+ - הפולינומיים מעל עם מקדמים מ-
+\begin_inset Formula $R$
+\end_inset
+
+.
+ זהו חוג אך לא שדה.
+ כיצד נבנה שדה? אם 
+\begin_inset Formula $F$
+\end_inset
+
+ שדה מסמנים ב- 
+\begin_inset Formula $F\left(x\right)$
+\end_inset
+
+ את חוג הפונקציות הרציונליות )מנות של פולינומיים - 
+\begin_inset Formula $\frac{p_{1}\left(x\right)}{p_{2}\left(x\right)}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection
+תחומי שלמות
+\end_layout
+
+\begin_layout Definition
+יהא 
+\begin_inset Formula $a\in R$
+\end_inset
+
+ איבר בחוג.
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ יקרא מחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם 
+\begin_inset Formula $a\ne0$
+\end_inset
+
+ וקיים 
+\begin_inset Formula $b\ne0$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $ab=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula $a\cdot0=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $a\in R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+מתקיים מפילוג ומכך ש- 
+\begin_inset Formula $0+0=0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+a\cdot0+a\cdot0=a\left(0+0\right)=a\cdot0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ולכן:
+\begin_inset Formula 
+\[
+a\cdot0+a\cdot0=a\cdot0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ולכן:
+\begin_inset Formula 
+\[
+a\cdot0=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
+כל שדה הוא תחום שלמות.
+\end_layout
+
+\begin_layout Proof
+
+\end_layout
+
+\end_body
+\end_document
